@@ -38,7 +38,8 @@ class PostsTableSeeder extends Seeder
                 'created_at'=>clone($date),
                 'updated_at'=>clone($date),
                 'category_id'=> rand(1,5),
-                'published_at'=> $i > 5 && rand(0,1)== 0 ? NULL : $publishedDate->addDays($i+4)
+                'published_at'=> $i > 5 && rand(0,1)== 0 ? NULL : $publishedDate->addDays($i+4),
+                'view_count' => rand(1,10)*10
 
             ];
         }

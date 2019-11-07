@@ -25,6 +25,8 @@ class BlogController extends Controller
         #composerServiceProvider load here...
 
         $post = Post::published()->findOrFail($id);
+
+        $post->increment('view_count');
         return view('blog.show', compact('post'));
     }
 
