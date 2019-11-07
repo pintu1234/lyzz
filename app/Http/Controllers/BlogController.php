@@ -59,7 +59,7 @@ class BlogController extends Controller
     public function author($id)
     {
        /* $posts = Post::latestFirst()->published()->where('author_id', $id)->paginate(4);*/
-        $posts = User::findOrFail($id)->posts()->lastFirst()->published()->paginate(4);
+        $posts = User::findOrFail($id)->posts()->latestFirst()->published()->paginate(4);
         return view('blog.index', compact('posts'));
     }
 }
