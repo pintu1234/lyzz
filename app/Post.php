@@ -12,6 +12,10 @@ class Post extends Model
     {
         return $this->belongsTo(User::class);
     }
+    public function category()
+    {
+        return $this->belongsTo(Category::class);
+    }
 
     //...image accessor
     public function getImageUrlAttribute($value)
@@ -40,6 +44,7 @@ class Post extends Model
     {
         return Markdown::convertToHtml(e($this->body));
     }
+
     //...scope orderBy
     public function scopeLatestFirst($query)
     {
