@@ -3,16 +3,17 @@
 namespace App;
 
 use Carbon\Carbon;
+use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
-
 class Post extends Model
 {
+    //...Relation to author
     public function author()
     {
         return $this->belongsTo(User::class);
     }
 
-    // image accessor
+    //...image accessor
     public function getImageUrlAttribute($value)
     {
         $imageUrl = "";
@@ -26,13 +27,20 @@ class Post extends Model
         }
         return $imageUrl;
     }
-    //Date accessor
+
+    //...Date accessor
     protected $dates = ['published_at'];
     public function getDateAttribute($value)
     {
         return is_null($this->published_at)? '' : $this->published_at->diffForHumans();
     }
-    // scope orderBy
+
+    //...Markdown accessor
+    public function getBodyHtmlAttribute($value)
+    {
+        return Markdown::convertToHtml(e($this->body));
+    }
+    //...scope orderBy
     public function scopeLatestFirst($query)
     {
         return $query->orderBy('created_at', 'desc');
@@ -42,4 +50,5 @@ class Post extends Model
     {
         return $query->where('published_at', '<=', Carbon::now());
     }
+
 }
