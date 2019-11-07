@@ -22,6 +22,8 @@ class CreatePostsTable extends Migration
             $table->text('excerpt');
             $table->text('body');
             $table->string('image')->nullable();
+            $table->integer('category_id')->unsigned();
+            $table->foreign('category_id')->references('id')->on('category')->onDelete('restrict');
             $table->timestamps();
         });
     }
