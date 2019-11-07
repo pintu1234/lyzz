@@ -41,4 +41,13 @@ class User extends Authenticatable
     {
         return $this->hasMany(Post::class, 'author_id');
     }
+
+    public function gravatar()
+    {
+        $email = $this->email;
+        $default = "https://pbs.twimg.com/profile_images/453956388851445761/8BKnRUXg_400x400.png";
+        $size = 80;
+
+        return "https://www.gravatar.com/avatar/" . md5( strtolower( trim( $email ) ) ) . "?d=" . urlencode( $default ) . "&s=" . $size;
+    }
 }
