@@ -26,7 +26,7 @@
                         <div class="post-meta padding-10 clearfix">
                             <div class="pull-left">
                                 <ul class="post-meta-group">
-                                    <li><i class="fa fa-user"></i><a href="#">{{$post->author->name}}</a></li>
+                                    <li><i class="fa fa-user"></i><a href="{{route('author', $post->author->id)}}">{{$post->author->name}}</a></li>
                                     <li><i class="fa fa-clock-o"></i><time>{{$post->date}}</time></li>
                                     <li><i class="fa fa-tags"></i><a href="{{route('category', $post->category->slug)}}"> {{$post->category->slug}}</a></li>
                                     <li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
