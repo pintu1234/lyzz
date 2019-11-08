@@ -47,7 +47,11 @@
                                     {{$postCount}} {{ str_plural('post', $postCount) }}
                                 </a>
                             </div>
-                            <p>{!! Markdown::convertToHtml(e($post->author->bio)) !!}</p>
+                           @if($post->author->bio)
+                                <p>{!! Markdown::convertToHtml(e($post->author->bio)) !!}</p>
+                           @else
+                               <p class="text-warning">Apparently, this user prefers to keep an air of mystery about them</p>
+                           @endif
                         </div>
                     </div>
                 </article>

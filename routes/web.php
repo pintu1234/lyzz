@@ -22,3 +22,8 @@ Route::get('/category/{category}', [
     'as'    => 'category'
 ]);
 Route::get('/author/{author}',['uses'=>'BlogController@author', 'as'=>'author']);
+
+Auth::routes();
+
+Route::get('/home', 'Backend\HomeController@index')->name('home');
+Route::get('/logout', 'CustomLoginController@logout');

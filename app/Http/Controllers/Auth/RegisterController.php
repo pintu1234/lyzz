@@ -69,4 +69,17 @@ class RegisterController extends Controller
             'password' => Hash::make($data['password']),
         ]);
     }
+
+    /**
+     * Restricted user from registrations
+     **/
+    public function showRegistrationForm()
+    {
+        abort(404);
+    }
+
+    public function register(Request $request)
+    {
+        abort(404);
+    }
 }
