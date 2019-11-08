@@ -1,9 +1,21 @@
+html
+{
+    position: relative;
+    min-height: 100%;
+}
+
 body {
     font-family: 'Raleway', sans-serif;
     padding-top: 70px;
     color: #777;
-
+    margin-bottom: 60px;
     background: #fcfcfc  url("../img/body-bg.png");
+}
+footer
+{
+    position: absolute;
+    width: 100%;
+    bottom: 0;
 }
 
 a {
@@ -333,3 +345,4 @@ ul.social-icons li {
 span.required {
     color: red;
 }
+

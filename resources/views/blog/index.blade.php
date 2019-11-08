@@ -5,7 +5,7 @@
             <div class="col-md-8">
                 @if(! $posts->count())
                     <div class="alert alert-warning">
-                        No post found.
+                       No post found!
                     </div>
                 @else
                 @foreach($posts as $post)
