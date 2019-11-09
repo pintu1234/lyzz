@@ -25,7 +25,7 @@ My Blog | Dashboard
                             <p class="lead text-muted">Hallo {{Auth::user()->name}}, Welcome to MyBlog</p>
 
                             <h4>Get started</h4>
-                            <p><a href="#" class="btn btn-primary">Write your first blog post</a> </p>
+                            <p><a href="{{route('blogs.create')}}" class="btn btn-primary">Write your first blog post</a> </p>
                         </div>
                         <!-- /.box-body -->
                     </div>

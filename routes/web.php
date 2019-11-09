@@ -27,3 +27,5 @@ Auth::routes();
 
 Route::get('/home', 'Backend\HomeController@index')->name('home');
 Route::get('/logout', 'CustomLoginController@logout');
+
+Route::resource('admin/blogs', 'Backend\AdminBlogController');

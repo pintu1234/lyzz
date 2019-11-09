@@ -30,7 +30,6 @@
 
                             <p>
                                 {{Auth::user()->name}} - Web Developer
-                                <small>Member since 2016</small>
                             </p>
                         </li>
                         <!-- Menu Footer-->

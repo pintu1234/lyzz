@@ -31,6 +31,11 @@
                     <li class="active"><a href="{{route('blog')}}">Blog</a></li>
                     <li><a href="#">About</a></li>
                     <li><a href="#">Contact</a></li>
+                    @if(! Auth::check())
+                    <li class="login"><a href="{{url('login')}}"><i class="fa fa-lock"></i> Login</a></li>
+                    @else
+                        <li><a href="#">My account</a></li>
+                    @endif
                 </ul>
             </div><!-- /.navbar-collapse -->
         </div><!-- /.container -->

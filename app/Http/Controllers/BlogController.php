@@ -17,7 +17,7 @@ class BlogController extends Controller
                 ->published()
                 ->Paginate(4);
 
-        return view('blog.index', compact('posts'));
+        return view('users.blog.index', compact('posts'));
     }
 
     public function show($id)
@@ -27,7 +27,7 @@ class BlogController extends Controller
         $post = Post::published()->findOrFail($id);
 
         $post->increment('view_count');
-        return view('blog.show', compact('post'));
+        return view('users.blog.show', compact('post'));
     }
 
     //...Filtering posts by category
@@ -54,7 +54,7 @@ class BlogController extends Controller
                 ->published()
                 ->paginate(4);
 
-        return view('blog.index', compact('posts'));
+        return view('users.blog.index', compact('posts'));
 
     }
 
@@ -62,6 +62,6 @@ class BlogController extends Controller
     {
        /* $posts = Post::latestFirst()->published()->where('author_id', $id)->paginate(4);*/
         $posts = User::findOrFail($id)->posts()->latestFirst()->published()->paginate(4);
-        return view('blog.index', compact('posts'));
+        return view('users.blog.index', compact('posts'));
     }
 }
