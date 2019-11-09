@@ -24,7 +24,7 @@
                     <div class="box">
                         <!-- /.box-header -->
                         <div class="box-body ">
-                          {!! Form::open(['method'=>'POST', 'action'=>'Backend\AdminBlogController@store']) !!}
+                          {!! Form::open(['method'=>'POST', 'action'=>'Backend\AdminBlogController@store', 'files'=>true ]) !!}
                             <div class="form-group {{$errors->has('title') ? 'has-error': ''}}">
                                   {!! Form::label('title') !!}
                                   {!! Form::text('title', null, ['class'=>'form-control']) !!}
@@ -73,7 +73,15 @@
                                     <span class="help-block">{{ $errors->first('category_id') }}</span>
                                 @endif
                             </div>
+                            <div class="form-group {{ $errors->has('image') ? 'has-error' : '' }}">
+                                {!! Form::label('image', 'Feature Image') !!}
+                                {!! Form::file('image', ['class'=>'form-control']) !!}
 
+                                @if($errors->has('image'))
+                                    <span class="help-block">{{ $errors->first('image') }}</span>
+                                @endif
+                            </div>
+                            <hr>
                             <div class="form-group">
                                 {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
                             </div>

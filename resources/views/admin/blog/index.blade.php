@@ -49,10 +49,10 @@
                           <tbody>
                           <tr>
                               <td>
-                                  <a href="#" class="btn btn-xs btn-default">
+                                  <a href="#" class="btn btn-xs btn-default" title="edit">
                                       <i class="fa fa-edit"></i>
                                   </a>
-                                  <a href="#" class="btn btn-xs btn-danger">
+                                  <a href="#" class="btn btn-xs btn-danger" title="delete">
                                       <i class="fa fa-times"></i>
                                   </a>
                               </td>

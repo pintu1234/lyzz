@@ -40,11 +40,18 @@ class AdminBlogController extends BackendController
      */
     public function store(PostsRequest $request)
     {
-
         $input = $request->all();
+
+        if($file = $request->file('image'))
+        {
+            $name = time().$file->getClientOriginalName();
+            $file->move('img', $name);
+
+            $input['image'] = $name;
+        }
         $request->user()->posts()->create($input);
         return redirect('admin/blogs')
-            ->with('post_create' , 'Your post is successfully saved');
+            ->with('post_create' , 'Your post is saved successfully');
     }
 
     /**

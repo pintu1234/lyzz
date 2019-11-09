@@ -29,7 +29,8 @@ class PostsRequest extends FormRequest
             'excerpt'=> 'required',
             'body' => 'required',
             'published_at' => 'date_format:Y-m-d H:i:s',
-            'category_id' => 'required'
+            'category_id' => 'required',
+            'image' => 'image|max:200'
 
         ];
     }
@@ -38,7 +39,9 @@ class PostsRequest extends FormRequest
     {
        return [
            'published_at.date_format' => 'Published date must be followed by date format',
-           'category_id.required'      => 'Choose a valid category from the list'
+           'category_id.required'     => 'Choose a valid category from the list',
+           'image.image'              => 'Image must be in (jpeg, png, bmp, gif, or svg) format',
+
         ];
     }
 }
