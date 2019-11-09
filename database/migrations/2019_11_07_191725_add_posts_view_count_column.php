@@ -14,7 +14,7 @@ class AddPostsViewCountColumn extends Migration
     public function up()
     {
         Schema::table('posts', function (Blueprint $table) {
-            $table->integer('view_count');
+            $table->integer('view_count')->default(1);
         });
     }
 

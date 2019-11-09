@@ -1,4 +1,8 @@
 @extends('layouts.master')
+@section('title')
+    My blog - {{$post->title}}
+@endsection
+
 @section('content')
     <div class="container">
         <div class="row">

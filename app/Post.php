@@ -7,6 +7,7 @@ use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
 class Post extends Model
 {
+    protected $guarded = [];
     //...Relation to author
     public function author()
     {
@@ -45,7 +46,27 @@ class Post extends Model
         return Markdown::convertToHtml(e($this->body));
     }
 
-    //...scope orderBy
+    public function dateFormatted($showTimes = false)
+    {
+        $format = 'd-M-Y';
+        if($showTimes) $format = "h:i:a";
+        return $this->created_at->format($format);
+    }
+
+    public function publicationLabel()
+    {
+        if(!$this->published_at)
+            return '<span class="label label-warning">Draft</span>';
+
+        elseif ($this->published_at && $this->published_at->isFuture())
+            return '<span class="label label-primary">Schedule</span>';
+
+        else
+            return '<span class="label label-success">Published</span>';
+
+    }
+
+    //...scope orderBy latest
     public function scopeLatestFirst($query)
     {
         return $query->orderBy('created_at', 'desc');
@@ -60,5 +81,6 @@ class Post extends Model
     {
         return $query->where('published_at', '<=', Carbon::now());
     }
+
 
 }

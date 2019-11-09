@@ -52,5 +52,6 @@
 <script src="{{asset('/')}}admin/js/bootstrap.min.js"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('/')}}admin/js/app.min.js"></script>
+@yield('script')
 </body>
 </html>

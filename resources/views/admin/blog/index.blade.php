@@ -1,6 +1,6 @@
 @extends('layouts.admin.main')
 @section('title')
-    My Blog | index
+    My Blog | Index
 @endsection
 @section('content')
     <div class="content-wrapper">
@@ -11,7 +11,9 @@
                 <small>Display all blog posts</small>
             </h1>
             <ol class="breadcrumb">
-                <li class="active"><i class="fa fa-dashboard"></i> Dashboard</li>
+                <li class="active"><a href="{{url('home')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
+                <li><a href="{{route('blogs.index')}}">Blogs</a></li>
+                <li><a href="{{route('blogs.index')}}">All posts</a></li>
             </ol>
         </section>
 
@@ -21,16 +23,26 @@
                 <div class="col-xs-12">
                     <div class="box">
                         <!-- /.box-header -->
+                        <div class="box-header">
+                            <div class="pull-left">
+                                <a href="{{route('blogs.create')}}" class="btn btn-success">Add new</a>
+                            </div>
+                        </div>
                         <div class="box-body ">
-                        @if($posts)
+
+                        @include('layouts.admin.include.flash_messages')
+
+                        @if(! $posts)
+                          <div class="alert alert-warning"><b>No post found</b></div>
+                        @else
                           <table class="table table-responsive table-hover">
                             <thead>
                               <tr>
                                 <th scope="col" width="80">Action</th>
                                 <th scope="col">Title</th>
-                                <th scope="col">Author</th>
-                                <th scope="col">Category</th>
-                                <th scope="col">Date</th>
+                                <th scope="col" width="150">Author</th>
+                                <th scope="col" width="150">Category</th>
+                                <th scope="col" width="200">Create Date</th>
                               </tr>
                             </thead>
                           @foreach($posts as $post)
@@ -47,7 +59,10 @@
                               <td>{{$post->title}}</td>
                               <td>{{$post->author->name}}</td>
                               <td>{{$post->category->title}}</td>
-                              <td>{{$post->created_at->diffForHumans()}}</td>
+                              <td>
+                                  <abbr title="{{$post->dateFormatted(true)}}">{{$post->dateFormatted()}}</abbr>
+                                  {!! $post->publicationLabel() !!}
+                              </td>
                           </tr>
                           </tbody>
                           @endforeach
@@ -57,13 +72,12 @@
                         <!-- /.box-body -->
                         <div class="box-footer clearfix">
                             <div class="pull-left">
-                                <ul class="pagination no-margin">
+                                <ul class="pagination">
                                     {{$posts->render()}}
                                 </ul>
                             </div>
                             <div class="pull-right">
                                 <small>
-                                    <?php $postsCount = $posts->count();?>
                                     {{$postsCount}} {{str_plural('post', $postsCount)}}
                                 </small>
                             </div>
@@ -76,5 +90,11 @@
         </section>
         <!-- /.content -->
     </div>
+@endsection
+
+@section('script')
+    <script type="text/javascript">
+        $('ul.pagination').addClass('no-margin pagination-sm');
+    </script>
 @endsection
 

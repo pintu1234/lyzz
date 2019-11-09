@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Category;
+use App\Http\Requests\PostsRequest;
 use App\Post;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -15,8 +17,9 @@ class AdminBlogController extends BackendController
      */
     public function index()
     {
-        $posts = Post::paginate(12);
-        return view('admin.blog.index', compact('posts'));
+        $posts = Post::with('author', 'category')->latestFirst()->paginate(12);
+        $postsCount = Post::count();
+        return view('admin.blog.index', compact('posts', 'postsCount'));
     }
 
     /**
@@ -26,7 +29,7 @@ class AdminBlogController extends BackendController
      */
     public function create()
     {
-        //
+        return view('admin.blog.create');
     }
 
     /**
@@ -35,9 +38,13 @@ class AdminBlogController extends BackendController
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store(PostsRequest $request)
     {
-        //
+
+        $input = $request->all();
+        $request->user()->posts()->create($input);
+        return redirect('admin/blogs')
+            ->with('post_create' , 'Your post is successfully saved');
     }
 
     /**

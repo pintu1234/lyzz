@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>MyBlog | My Awesome Blog</title>
+    <title>@yield('title','My Blog | Home')</title>
     <link rel="shortcut icon" type="image/png" href="{{asset('img/favicon.png')}}">
 
     <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
