@@ -59,7 +59,12 @@
                             </div>
                             <div class="form-group {{ $errors->has('published_at') ? 'has-error' : '' }}">
                                 {!! Form::label('published_at', 'Publish Date') !!}
-                                {!! Form::text('published_at', null, ['class'=>'form-control', 'placeholder'=>'Y-m-d H:i:s']) !!}
+                                <div class='input-group date' id='datetimepicker1'>
+                                    {!! Form::text('published_at', null, ['class'=>'form-control', 'placeholder'=>'Pick your date and time']) !!}
+                                    <span class="input-group-addon">
+                                    <span class="glyphicon glyphicon-calendar"></span>
+                                </span>
+                                </div>
 
                                 @if($errors->has('published_at'))
                                     <span class="help-block">{{ $errors->first('published_at') }}</span>
@@ -107,7 +112,7 @@
         var theTitle = this.value.toLowerCase().trim(),
             slugInput = $('#slug');
         theSlug = theTitle.replace(/&/g, '-and-')
-                        .replace(/[^a-z0-9-]+/g, '-')
+                        .replace(/[^a-z$0-9-]+/g, '-')
                         .replace(/\-\-+/g, '-')
                         .replace(/^-+|-+$/g, '')
 
@@ -130,5 +135,9 @@
         placeholder: 'Write your blog here'
     });
 
+    $('#datetimepicker1').datetimepicker({
+        format: 'YYYY-MM-DD HH:mm:ss',
+        showClear:true
+    });
     </script>
 @endsection

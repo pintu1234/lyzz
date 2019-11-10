@@ -21,6 +21,8 @@
     <link rel="stylesheet" href="{{asset('/')}}admin/plugins/simplemde/simplemde.min.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="{{asset('/')}}admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    {{--Date time picker css--}}
+    <link rel="stylesheet" href="{{asset('/')}}admin/css/bootstrap-datetime-picker.min.css">
     <link rel="stylesheet" href="{{asset('/')}}admin/css/custom.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -55,6 +57,11 @@
 <script src="{{asset('/')}}admin/js/bootstrap.min.js"></script>
 {{--Simple MDE--}}
 <script src="{{asset('/')}}admin/plugins/simplemde/simplemde.min.js"></script>
+
+{{--Date and time picker js--}}
+<script src="{{asset('/')}}admin/js/moment.min.js"></script>
+<script src="{{asset('/')}}admin/js/bootstrap-datetime-picker.min.js"></script>
+
 <!-- AdminLTE App -->
 <script src="{{asset('/')}}admin/js/app.min.js"></script>
 @yield('script')
