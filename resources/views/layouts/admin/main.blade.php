@@ -17,8 +17,11 @@
     <!-- AdminLTE Skins. Choose a skin from the css/skins
          folder instead of downloading all of them to reduce the load. -->
     <link rel="stylesheet" href="{{asset('/')}}admin/css/skins/_all-skins.min.css">
+    {{--simple MDE--}}
+    <link rel="stylesheet" href="{{asset('/')}}admin/plugins/simplemde/simplemde.min.css">
     <!-- bootstrap wysihtml5 - text editor -->
     <link rel="stylesheet" href="{{asset('/')}}admin/plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.min.css">
+    <link rel="stylesheet" href="{{asset('/')}}admin/css/custom.css">
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -50,6 +53,8 @@
 <script src="{{asset('/')}}admin/js/jquery-2.2.3.min.js"></script>
 <!-- Bootstrap 3.3.6 -->
 <script src="{{asset('/')}}admin/js/bootstrap.min.js"></script>
+{{--Simple MDE--}}
+<script src="{{asset('/')}}admin/plugins/simplemde/simplemde.min.js"></script>
 <!-- AdminLTE App -->
 <script src="{{asset('/')}}admin/js/app.min.js"></script>
 @yield('script')

@@ -43,6 +43,7 @@
                                 <th scope="col" width="150">Author</th>
                                 <th scope="col" width="150">Category</th>
                                 <th scope="col" width="200">Create Date</th>
+                                <th scope="col" width="150">Published Date</th>
                               </tr>
                             </thead>
                           @foreach($posts as $post)
@@ -63,6 +64,7 @@
                                   <abbr title="{{$post->dateFormatted(true)}}">{{$post->dateFormatted()}}</abbr>
                                   {!! $post->publicationLabel() !!}
                               </td>
+                              <td>{{$post->published_at? $post->published_at->diffForHumans(): 'Not set'}}</td>
                           </tr>
                           </tbody>
                           @endforeach

@@ -98,4 +98,37 @@
         <!-- /.content -->
     </div>
 @endsection
+@section('script')
+    <script type="text/javascript">
+    /*
+    making slug automatically
+    */
+    $('#title').on('blur', function() {
+        var theTitle = this.value.toLowerCase().trim(),
+            slugInput = $('#slug');
+        theSlug = theTitle.replace(/&/g, '-and-')
+                        .replace(/[^a-z0-9-]+/g, '-')
+                        .replace(/\-\-+/g, '-')
+                        .replace(/^-+|-+$/g, '')
 
+        slugInput.val(theSlug);
+    });
+
+    /*
+    jQuery code for simple MDE
+    */
+    var simplemdeExcerpt = new SimpleMDE({
+        element: $("#excerpt")[0],
+        spellChecker: false,
+        hideIcons: ['guide', 'fullscreen', 'image', 'link', 'side-by-side'],
+        showIcons: [ 'undo', 'redo'],
+    });
+    var simplemdeBody = new SimpleMDE({
+        element: $("#body")[0] ,
+        hideIcons: ['guide', 'fullscreen', 'image', 'link', 'side-by-side'],
+        showIcons: [ 'undo', 'redo'],
+        placeholder: 'Write your blog here'
+    });
+
+    </script>
+@endsection
