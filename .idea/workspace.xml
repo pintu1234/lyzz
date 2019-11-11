@@ -2,20 +2,25 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="432ca290-c313-4a00-a39d-c86a67bba0f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/blog/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/blog/trash.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminBlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminBlogController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Post.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Post.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/css/custom.css" beforeDir="false" afterPath="$PROJECT_DIR$/public/css/custom.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1573315423web development.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1573324016laravel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1573330095javascript.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/15733721821572416140717.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/15733726551572416024710.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/blog/create.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/blog/create.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/admin/blog/index.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/admin/blog/index.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/include/flash_messages.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/include/flash_messages.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/1573469397laravel.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/1573469499paython.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_1.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_1_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_2.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_2_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_3.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_3_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_4.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_4_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_5.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_5_thumb.jpg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/include/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/include/sidebar.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -145,7 +150,7 @@
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_package_manager_path" value="npm" />
-    <property name="settings.editor.selected.configurable" value="editor.preferences.fonts.default" />
+    <property name="settings.editor.selected.configurable" value="editing.templates" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -198,7 +203,8 @@
       <workItem from="1573205303546" duration="28876000" />
       <workItem from="1573276379861" duration="38794000" />
       <workItem from="1573368290987" duration="23564000" />
-      <workItem from="1573448220349" duration="20466000" />
+      <workItem from="1573448220349" duration="20716000" />
+      <workItem from="1573477057386" duration="15044000" />
     </task>
     <servers />
   </component>

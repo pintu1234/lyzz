@@ -24,7 +24,7 @@ class PostsTableSeeder extends Seeder
 
         for($i = 1; $i <=20; $i++)
         {
-            $image = "Post_Image_". rand(1,5).".jpg";
+            $image = "Post_Image_". rand(1,8).".png";
             $date->addDays(1);
             $publishedDate = clone($date);
 
