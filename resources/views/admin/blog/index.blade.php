@@ -25,14 +25,21 @@
                         <!-- /.box-header -->
                         <div class="box-header">
                             <div class="pull-left">
-                                <a href="{{route('blogs.create')}}" class="btn btn-success">Add new</a>
+                                <a href="{{route('blogs.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Add new</a>
+                            </div>
+                            <div class="pull-right">
+                                <a href="{{route('blogs.index')}}">All</a> |
+                                <a href="{{route('blogs.published')}}">Published</a> |
+                                <a href="{{route('blogs.schedule')}}">Scheduled</a> |
+                                <a href="{{route('blogs.draft')}}">Drafted</a> |
+                                <a href="{{route('blogs.trash')}}" class="text-danger">Trash</a>
                             </div>
                         </div>
                         <div class="box-body ">
 
                         @include('layouts.admin.include.flash_messages')
 
-                        @if(! $posts)
+                        @if(! $posts->count())
                           <div class="alert alert-warning"><b>No post found</b></div>
                         @else
                           <table class="table table-responsive table-hover">
@@ -50,12 +57,14 @@
                           <tbody>
                           <tr>
                               <td>
-                                  <a href="#" class="btn btn-xs btn-default" title="edit">
+                                  {!! Form::open(['method'=>'DELETE', 'action'=>['Backend\AdminBlogController@destroy', $post->id]]) !!}
+                                  <a href="{{route('blogs.edit', $post->id)}}" class="btn btn-xs btn-default" title="Edit">
                                       <i class="fa fa-edit"></i>
                                   </a>
-                                  <a href="#" class="btn btn-xs btn-danger" title="delete">
-                                      <i class="fa fa-times"></i>
-                                  </a>
+                                  <button type="submit" class="btn btn-xs btn-danger" title="Move to trash">
+                                      <i class="fa fa-trash"></i>
+                                  </button>
+                                  {!! Form::close() !!}
                               </td>
                               <td>{{$post->title}}</td>
                               <td>{{$post->author->name}}</td>

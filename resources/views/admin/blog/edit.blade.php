@@ -24,10 +24,10 @@
                     <div class="box">
                         <!-- /.box-header -->
                         <div class="box-body ">
-                          {!! Form::open(['method'=>'POST', 'action'=>'Backend\AdminBlogController@store', 'files'=>true ]) !!}
+                            {!! Form::model($post, ['method'=>'PATCH', 'action'=>['Backend\AdminBlogController@update', $post->id], 'files'=>true ]) !!}
                             <div class="form-group {{$errors->has('title') ? 'has-error': ''}}">
-                                  {!! Form::label('title') !!}
-                                  {!! Form::text('title', null, ['class'=>'form-control']) !!}
+                                {!! Form::label('title') !!}
+                                {!! Form::text('title', null, ['class'=>'form-control']) !!}
 
                                 @if($errors->has('title'))
                                     <span class="help-block">{{ $errors->first('title') }}</span>
@@ -96,9 +96,9 @@
                             </div>
                             <hr>
                             <div class="form-group">
-                                {!! Form::submit('Create Post', ['class'=>'btn btn-primary']) !!}
+                                {!! Form::submit('Update Post', ['class'=>'btn btn-warning']) !!}
                             </div>
-                          {!! Form::close() !!}
+                            {!! Form::close() !!}
 
                         </div>
                         <!-- /.box-body -->
@@ -113,39 +113,39 @@
 @endsection
 @section('script')
     <script type="text/javascript">
-    /*
-    making slug automatically
-    */
-    $('#title').on('blur', function() {
-        var theTitle = this.value.toLowerCase().trim(),
-            slugInput = $('#slug');
-        theSlug = theTitle.replace(/&/g, '-and-')
-                        .replace(/[^a-z$0-9-]+/g, '-')
-                        .replace(/\-\-+/g, '-')
-                        .replace(/^-+|-+$/g, '')
+        /*
+        making slug automatically
+        */
+        $('#title').on('blur', function() {
+            var theTitle = this.value.toLowerCase().trim(),
+                slugInput = $('#slug');
+            theSlug = theTitle.replace(/&/g, '-and-')
+                .replace(/[^a-z$0-9-]+/g, '-')
+                .replace(/\-\-+/g, '-')
+                .replace(/^-+|-+$/g, '')
 
-        slugInput.val(theSlug);
-    });
+            slugInput.val(theSlug);
+        });
 
-    /*
-    jQuery code for simple MDE
-    */
-    var simplemdeExcerpt = new SimpleMDE({
-        element: $("#excerpt")[0],
-        spellChecker: false,
-        hideIcons: ['guide', 'fullscreen', 'image', 'link', 'side-by-side'],
-        showIcons: [ 'undo', 'redo'],
-    });
-    var simplemdeBody = new SimpleMDE({
-        element: $("#body")[0] ,
-        hideIcons: ['guide', 'fullscreen', 'image', 'link', 'side-by-side'],
-        showIcons: [ 'undo', 'redo'],
-        placeholder: 'Write your blog here'
-    });
+        /*
+        jQuery code for simple MDE
+        */
+        var simplemdeExcerpt = new SimpleMDE({
+            element: $("#excerpt")[0],
+            spellChecker: false,
+            hideIcons: ['guide', 'fullscreen', 'image', 'link', 'side-by-side'],
+            showIcons: [ 'undo', 'redo'],
+        });
+        var simplemdeBody = new SimpleMDE({
+            element: $("#body")[0] ,
+            hideIcons: ['guide', 'fullscreen', 'image', 'link', 'side-by-side'],
+            showIcons: [ 'undo', 'redo'],
+            placeholder: 'Write your blog here'
+        });
 
-    $('#datetimepicker1').datetimepicker({
-        format: 'YYYY-MM-DD HH:mm:ss',
-        showClear:true
-    });
+        $('#datetimepicker1').datetimepicker({
+            format: 'YYYY-MM-DD HH:mm:ss',
+            showClear:true
+        });
     </script>
 @endsection

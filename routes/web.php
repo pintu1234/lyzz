@@ -28,4 +28,14 @@ Auth::routes();
 Route::get('/home', 'Backend\HomeController@index')->name('home');
 Route::get('/logout', 'CustomLoginController@logout');
 
+Route::put('/admin/blogs/restore/{id}', ['uses' => 'Backend\AdminBlogController@restore'])->name('blogs.restore');
+
+Route::delete('/admin/blogs/forceDelete/{id}', ['uses'=> 'Backend\AdminBlogController@forceDelete'])->name('blogs.forceDelete');
+
+Route::get('/admin/blogs/trash', ['uses'=> 'Backend\AdminBlogController@all_trash'])->name('blogs.trash');
+
+Route::get('/blogs/schedule-posts',['uses'=>'Backend\AdminBlogController@schedule_posts'])->name('blogs.schedule');
+Route::get('/blogs/draft-posts',['uses'=>'Backend\AdminBlogController@draft_posts'])->name('blogs.draft');
+Route::get('/blogs/publish-posts',['uses'=>'Backend\AdminBlogController@publish_posts'])->name('blogs.published');
+
 Route::resource('admin/blogs', 'Backend\AdminBlogController');

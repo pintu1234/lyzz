@@ -5,8 +5,11 @@ namespace App;
 use Carbon\Carbon;
 use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\SoftDeletes;
+
 class Post extends Model
 {
+    use softDeletes;
     protected $guarded = [];
     //...Relation to author
     public function author()
@@ -66,10 +69,10 @@ class Post extends Model
 
     }
 
-    //...scope orderBy latest
+    //...scope orderBy published latest
     public function scopeLatestFirst($query)
     {
-        return $query->orderBy('created_at', 'desc');
+        return $query->orderBy('published_at', 'desc');
     }
     //...scope for popular posts
     public function scopePopular($query)
@@ -80,6 +83,14 @@ class Post extends Model
     public function scopePublished($query)
     {
         return $query->where('published_at', '<=', Carbon::now());
+    }
+    public function scopeScheduled($query)
+    {
+        return $query->where('published_at', '>', Carbon::now());
+    }
+    public function scopeDrafted($query)
+    {
+        return $query->whereNull('published_at');
     }
 
 

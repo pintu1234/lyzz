@@ -64,7 +64,7 @@ header .navbar-default, .post-item, .widget, footer, .post-author, .post-comment
 .post-item-image img {
     width: 100%;
     border: none;
-    max-height: 350px;
+    max-height: 400px;
 }
 
 .post-item-body, .post-author, .post-comments {
