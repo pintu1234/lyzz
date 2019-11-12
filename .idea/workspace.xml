@@ -2,26 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="432ca290-c313-4a00-a39d-c86a67bba0f8" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/create.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/edit.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/resources/views/admin/category/index.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/myblog.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/myblog.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Category.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Category.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/seeds/PostsTableSeeder.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1573469397laravel.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/1573469499paython.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_1.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_1_thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_2.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_2_thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_3.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_3_thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_4.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_4_thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_5.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/public/img/Post_Image_5_thumb.jpg" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/resources/views/layouts/admin/include/sidebar.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/resources/views/layouts/admin/include/sidebar.blade.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/web.php" beforeDir="false" afterPath="$PROJECT_DIR$/routes/web.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminBlogController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Backend/AdminBlogController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/app.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/app.php" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -133,6 +120,10 @@
       <path value="$PROJECT_DIR$/vendor/league/commonmark" />
       <path value="$PROJECT_DIR$/vendor/graham-campbell/markdown" />
       <path value="$PROJECT_DIR$/vendor/laravelcollective/html" />
+      <path value="$PROJECT_DIR$/vendor/guzzlehttp/psr7" />
+      <path value="$PROJECT_DIR$/vendor/psr/http-message" />
+      <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
+      <path value="$PROJECT_DIR$/vendor/intervention/image" />
     </include_path>
   </component>
   <component name="ProjectId" id="1TEk2BuuDSrc7RdgBTiDneyQRs4" />
@@ -204,7 +195,8 @@
       <workItem from="1573276379861" duration="38794000" />
       <workItem from="1573368290987" duration="23564000" />
       <workItem from="1573448220349" duration="20716000" />
-      <workItem from="1573477057386" duration="15044000" />
+      <workItem from="1573477057386" duration="16650000" />
+      <workItem from="1573537339488" duration="2793000" />
     </task>
     <servers />
   </component>

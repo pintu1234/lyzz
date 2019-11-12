@@ -1,7 +1,7 @@
 <?php
 
 namespace App\Http\Controllers\Backend;
-
+use Intervention\Image\ImageManagerStatic as Image;
 use App\Category;
 use App\Http\Requests\PostsRequest;
 use App\Post;
@@ -45,8 +45,10 @@ class AdminBlogController extends BackendController
         if($file = $request->file('image'))
         {
             $name = time().$file->getClientOriginalName();
-            $file->move('img', $name);
-
+            /*$file->move('img', $name);*/
+            $image_resize = Image::make($file->getRealPath());
+            $image_resize->resize(500, 270);
+            $image_resize->save(public_path('img/' .$name));
             $input['image'] = $name;
         }
         $request->user()->posts()->create($input);
@@ -107,8 +109,10 @@ class AdminBlogController extends BackendController
         if($file = $request->file('image'))
         {
             $name = time().$file->getClientOriginalName();
-            $file->move('img', $name);
-
+            /*$file->move('img', $name);*/
+            $image_resize = Image::make($file->getRealPath());
+            $image_resize->resize(500, 270);
+            $image_resize->save(public_path('img/' .$name));
             $input['image'] = $name;
         }
         $post = Post::findOrFail($id);
