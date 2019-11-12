@@ -18,7 +18,7 @@
     {!! Form::open(['method'=>'PUT', 'action'=> ['Backend\AdminBlogController@restore', $postId]]) !!}
         <p class="alert alert-danger">
             <b>{{session('message', 'Your post is moved into trash !')}}</b>
-            <button type="submit" class="btn btn-sm btn-primary"><i class="fa fa-undo"></i> undo</button>
+            <button type="submit" class="btn btn-xs btn-primary"><i class="fa fa-undo"></i> undo</button>
         </p>
     {!! Form::close() !!}
 @endif

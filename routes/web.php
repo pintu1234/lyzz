@@ -49,5 +49,6 @@ Route::resource('admin/blogs', 'Backend\AdminBlogController');
 /*==== Admin category routes ====*/
 Route::resource('admin/categories', 'Backend\AdminCategoryController');
 
-
+/*==== Admin users routes ====*/
+Route::resource('admin/users', 'Backend\AdminUserController');
 
