@@ -95,7 +95,7 @@ class AdminBlogController extends BackendController
             'body' => 'required',
             'published_at' => 'date_format:Y-m-d H:i:s',
             'category_id' => 'required',
-            'image' => 'image|max:200'
+            'image' => 'image|max:1000'
         ];
         $message = [
             'category_id.required'      => 'Select a category for the post',

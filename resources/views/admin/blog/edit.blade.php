@@ -59,7 +59,7 @@
                             </div>
 
                             <div class="row">
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group {{ $errors->has('published_at') ? 'has-error' : '' }}">
                                         {!! Form::label('published_at', 'Publish Date') !!}
                                         <div class='input-group date' id='datetimepicker1'>
@@ -74,7 +74,7 @@
                                         @endif
                                     </div>
                                 </div>
-                                <div class="col-md-6">
+                                <div class="col-md-4">
                                     <div class="form-group {{ $errors->has('image') ? 'has-error' : '' }}">
                                         {!! Form::label('image', 'Feature Image') !!}
                                         {!! Form::file('image', ['class'=>'form-control']) !!}
@@ -84,15 +84,16 @@
                                         @endif
                                     </div>
                                 </div>
-                            </div>
+                                <div class="col-md-4">
+                                    <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
+                                        {!! Form::label('categpry_id', 'Category') !!}
+                                        {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class'=>'form-control', 'placeholder'=>'Choose category']) !!}
 
-                            <div class="form-group {{ $errors->has('category_id') ? 'has-error' : '' }}">
-                                {!! Form::label('categpry_id', 'Category') !!}
-                                {!! Form::select('category_id', App\Category::pluck('title', 'id'), null, ['class'=>'form-control', 'placeholder'=>'Choose category']) !!}
-
-                                @if($errors->has('category_id'))
-                                    <span class="help-block">{{ $errors->first('category_id') }}</span>
-                                @endif
+                                        @if($errors->has('category_id'))
+                                            <span class="help-block">{{ $errors->first('category_id') }}</span>
+                                        @endif
+                                    </div>
+                                </div>
                             </div>
                             <hr>
                             <div class="form-group">
