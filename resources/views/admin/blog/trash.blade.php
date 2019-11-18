@@ -56,13 +56,23 @@
                                         <tr>
                                             <td>
                                                 {!! Form::open(['style'=>'display:inline-block','method'=>'PUT', 'action'=> ['Backend\AdminBlogController@restore', $post->id]]) !!}
-                                                <button type="submit" class="btn btn-xs btn-primary" title="Restore"><i class="fa fa-undo"></i></button>
+                                                @if(check_user_permissions(request(), 'AdminBlog@restore', $post->id))
+                                                    <button type="submit" class="btn btn-xs btn-primary" title="Restore"><i class="fa fa-undo"></i></button>
+                                                @else
+                                                    <button type="button" onclick="return false" class="btn btn-xs btn-primary disabled" title="Restore"><i class="fa fa-undo"></i></button>
+                                                @endif
                                                 {!! Form::close() !!}
 
                                                 {!! Form::open(['style'=>'display:inline-block','method'=>'DELETE', 'action'=>['Backend\AdminBlogController@forceDelete', $post->id]]) !!}
-                                                <button type="submit" class="btn btn-xs btn-danger" title="Delete permanently">
-                                                    <i class="fa fa-times"></i>
-                                                </button>
+                                                @if(check_user_permissions(request(), 'AdminBlog@forceDelete', $post->id))
+                                                    <button type="submit" class="btn btn-xs btn-danger" title="Delete permanently">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                @else
+                                                    <button type="button" onclick="return false" class="btn btn-xs btn-danger disabled" title="Delete permanently">
+                                                        <i class="fa fa-times"></i>
+                                                    </button>
+                                                @endif
                                                 {!! Form::close() !!}
                                             </td>
                                             <td>{{$post->title}}</td>

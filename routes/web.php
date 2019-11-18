@@ -27,7 +27,7 @@ Route::get('/category/{category}', [
 Route::get('/author/{author}',['uses'=>'BlogController@author', 'as'=>'author']);
 
 /*
- * Admin routes
+ * Backend / Admin routes
  */
 Auth::routes();
 

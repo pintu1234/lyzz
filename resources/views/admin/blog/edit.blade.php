@@ -1,6 +1,6 @@
 @extends('layouts.admin.main')
 @section('title')
-    My Blog | Create new post
+    My Blog | Edit post
 @endsection
 @section('content')
     <div class="content-wrapper">
@@ -8,7 +8,7 @@
         <section class="content-header">
             <h1>
                 Blogs
-                <small>Create new post</small>
+                <small>Edit post</small>
             </h1>
             <ol class="breadcrumb">
                 <li class="active"><a href="{{url('home')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>

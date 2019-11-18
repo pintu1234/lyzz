@@ -58,12 +58,26 @@
                           <tr>
                               <td>
                                   {!! Form::open(['method'=>'DELETE', 'action'=>['Backend\AdminBlogController@destroy', $post->id]]) !!}
-                                  <a href="{{route('blogs.edit', $post->id)}}" class="btn btn-xs btn-default" title="Edit">
-                                      <i class="fa fa-edit"></i>
-                                  </a>
-                                  <button type="submit" class="btn btn-xs btn-danger" title="Move to trash">
-                                      <i class="fa fa-trash"></i>
-                                  </button>
+
+                                  @if(check_user_permissions(request(), 'AdminBlog@edit', $post->id))
+                                      <a href="{{route('blogs.edit', $post->id)}}" class="btn btn-xs btn-default" title="Edit">
+                                          <i class="fa fa-edit"></i>
+                                      </a>
+                                  @else
+                                      <a href="#" class="btn btn-xs btn-default disabled" title="Edit">
+                                          <i class="fa fa-edit"></i>
+                                      </a>
+                                  @endif
+                                  @if(check_user_permissions(request(), 'AdminBlog@destroy', $post->id))
+                                      <button type="submit" class="btn btn-xs btn-danger" title="Move to trash">
+                                          <i class="fa fa-trash"></i>
+                                      </button>
+                                  @else
+                                      <button type="button" onclick="return false" class="btn btn-xs btn-danger disabled" title="Move to trash">
+                                          <i class="fa fa-trash"></i>
+                                      </button>
+                                  @endif
+
                                   {!! Form::close() !!}
                               </td>
                               <td>{{$post->title}}</td>
