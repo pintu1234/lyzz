@@ -6,6 +6,7 @@ use Carbon\Carbon;
 use GrahamCampbell\Markdown\Facades\Markdown;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\SoftDeletes;
+use Illuminate\Support\Facades\Auth;
 
 class Post extends Model
 {
@@ -91,6 +92,11 @@ class Post extends Model
     public function scopeDrafted($query)
     {
         return $query->whereNull('published_at');
+    }
+
+    public function scopeOwnPosts($query)
+    {
+        return $query->where('author_id', '=', Auth::user()->id);
     }
 
 

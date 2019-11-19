@@ -44,6 +44,7 @@ Route::get('/admin/blogs/trash', ['uses'=> 'Backend\AdminBlogController@all_tras
 Route::get('/blogs/schedule-posts',['uses'=>'Backend\AdminBlogController@schedule_posts'])->name('blogs.schedule');
 Route::get('/blogs/draft-posts',['uses'=>'Backend\AdminBlogController@draft_posts'])->name('blogs.draft');
 Route::get('/blogs/publish-posts',['uses'=>'Backend\AdminBlogController@publish_posts'])->name('blogs.published');
+Route::get('/blogs/my-posts',['uses'=>'Backend\AdminBlogController@myPosts'])->name('blogs.myposts');
 Route::resource('admin/blogs', 'Backend\AdminBlogController');
 
 /*==== Admin category routes ====*/

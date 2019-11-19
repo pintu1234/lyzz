@@ -28,6 +28,7 @@
                                 <a href="{{route('blogs.create')}}" class="btn btn-success"><i class="fa fa-plus-circle"></i> Add new</a>
                             </div>
                             <div class="pull-right">
+                                <a href="{{route('blogs.myposts')}}">My posts</a> |
                                 <a href="{{route('blogs.index')}}">All</a> |
                                 <a href="{{route('blogs.published')}}">Published</a> |
                                 <a href="{{route('blogs.schedule')}}">Scheduled</a> |

@@ -188,4 +188,13 @@ class AdminBlogController extends BackendController
         $postsCount = Post::drafted()->count();
         return view('admin.blog.index', compact('posts', 'postsCount'));
     }
+    /*
+     * user own posts
+     */
+    public function myPosts()
+    {
+        $posts = Post::OwnPosts()->paginate(10);
+        $postsCount = Post::OwnPosts()->count();
+        return view('admin.blog.index', compact('posts', 'postsCount'));
+    }
 }

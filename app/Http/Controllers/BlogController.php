@@ -60,6 +60,8 @@ class BlogController extends Controller
 
     public function author($id)
     {
+        #composerServiceProvider load here...
+
        /* $posts = Post::latestFirst()->published()->where('author_id', $id)->paginate(4);*/
         $posts = User::findOrFail($id)->posts()->latestFirst()->published()->paginate(4);
         return view('users.blog.index', compact('posts'));
