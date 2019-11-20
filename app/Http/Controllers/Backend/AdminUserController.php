@@ -23,17 +23,16 @@ class AdminUserController extends BackendController
 
     public function store(UserCreateRequest $request)
     {
-        if(trim($request->password == ''))
-        {
+        if(trim($request->password == '')) {
             $input = $request->except('password');
         }
-        else
-        {
+        else {
             $input = $request->all();
             $input['password'] = bcrypt($request->password);
         }
 
         $user = User::create($input);
+        $user->attachRole($request->role);
 
         return redirect('admin/users')->with('create_message', 'User create successfully');
     }
@@ -49,7 +48,8 @@ class AdminUserController extends BackendController
         $rules = [
             'name'=>'required',
             'email'=>'required|email|unique:users,email,'.$id,
-            'password'=>'confirmed'
+            'password'=>'confirmed',
+            'role'=>'required'
         ];
         $this->validate($request, $rules);
 
@@ -65,6 +65,8 @@ class AdminUserController extends BackendController
             $input['password'] = bcrypt($request->password);
         }
         $user->update($input);
+        $user->detachRoles();
+        $user->attachRole($request->role);
         return redirect('admin/users')->with('update_message', 'User update successfully');
     }
 
