@@ -52,7 +52,8 @@
                               <td>
                                   {!! Form::open(['method'=>'DELETE', 'action'=>['Backend\AdminUserController@destroy', $user->id ]]) !!}
 
-                                  <a href="#" class="btn btn-default btn-sm"><i class="fa fa-edit"></i></a>
+                                  <a href="{{route('users.edit', $user->id)}}" class="btn btn-default btn-sm"><i class="fa fa-edit"></i></a>
+
                                   @if($user->posts()->count() <= 0)
                                   <button type="submit" onclick="return confirm('User will delete permanentlly. Are you sure to delete??')" class="btn btn-danger btn-sm"><i class="fa fa-times"></i></button>
                                   @else
@@ -62,7 +63,7 @@
                               </td>
                               <td>{{$user->name}}</td>
                               <td>{{$user->email}}</td>
-                              <td>-</td>
+                              <td>{{ucwords($user->roles()->first()? $user->roles()->first()->name : "")}}</td>
                               <td>{{$user->posts()->count()}}</td>
                             </tr>
                             </tbody>

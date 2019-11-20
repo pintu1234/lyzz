@@ -2,6 +2,8 @@
 
 namespace App\Http\Controllers\Backend;
 
+use App\Http\Requests\UserCreateRequest;
+use App\Role;
 use App\User;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -16,7 +18,54 @@ class AdminUserController extends BackendController
     }
     public function create()
     {
-        return "User create page is comming soon";
+        return view('admin.user.create');
+    }
+
+    public function store(UserCreateRequest $request)
+    {
+        if(trim($request->password == ''))
+        {
+            $input = $request->except('password');
+        }
+        else
+        {
+            $input = $request->all();
+            $input['password'] = bcrypt($request->password);
+        }
+
+        $user = User::create($input);
+
+        return redirect('admin/users')->with('create_message', 'User create successfully');
+    }
+
+    public function edit($id)
+    {
+        $user = User::findOrFail($id);
+        return view('admin.user.edit', compact('user'));
+    }
+
+    public function update(Request $request, $id)
+    {
+        $rules = [
+            'name'=>'required',
+            'email'=>'required|email|unique:users,email,'.$id,
+            'password'=>'confirmed'
+        ];
+        $this->validate($request, $rules);
+
+        $user = User::findOrFail($id);
+
+        if(trim($request->password == ''))
+        {
+            $input = $request->except('password');
+        }
+        else
+        {
+            $input = $request->all();
+            $input['password'] = bcrypt($request->password);
+        }
+        $user->update($input);
+        return redirect('admin/users')->with('update_message', 'User update successfully');
     }
 
     public function destroy($id)

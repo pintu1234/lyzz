@@ -29,7 +29,7 @@
                             <img src="{{Auth::user()->gravatar()}}" class="img-circle" alt="User Image">
 
                             <p>
-                                {{Auth::user()->name}} - Web Developer
+                                {{Auth::user()->name}} - {{ucwords(Auth::user()->roles()->first()->name)}}
                             </p>
                         </li>
                         <!-- Menu Footer-->

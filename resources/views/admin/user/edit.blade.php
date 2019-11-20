@@ -1,19 +1,19 @@
 @extends('layouts.admin.main')
 @section('title')
-    My Blog | Edit Categories
+    My Blog | edit user
 @endsection
 @section('content')
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
         <section class="content-header">
             <h1>
-                Categories
-                <small>Update categories</small>
+                Users
+                <small>Edit user</small>
             </h1>
             <ol class="breadcrumb">
                 <li class="active"><a href="{{url('home')}}"><i class="fa fa-dashboard"></i> Dashboard</a></li>
-                <li><a href="{{route('categories.index')}}">Categories</a></li>
-                <li><a href="{{route('categories.edit',$category->id)}}">Edit Categories</a></li>
+                <li><a href="{{route('users.index')}}">Users</a></li>
+                <li><a href="{{route('users.create')}}">Add new</a></li>
 
             </ol>
         </section>
@@ -33,26 +33,42 @@
                             </div>
                         </div>
                         <div class="box-body ">
-                            {!! Form::model($category,['method'=>'PATCH', 'action'=>['Backend\AdminCategoryController@update',$category->id]]) !!}
-                            <div class="form-group {{$errors->has('title')? 'has-error': ''}}">
-                                {!! Form::label('title') !!}
-                                {!! Form::text('title', null, ['class'=>'form-control']) !!}
+                            {!! Form::model($user, ['method'=>'PATCH', 'action'=>['Backend\AdminUserController@update', $user->id]]) !!}
+                            <div class="form-group {{$errors->has('name')? 'has-error': ''}}">
+                                {!! Form::label('name') !!}
+                                {!! Form::text('name', null, ['class'=>'form-control']) !!}
 
-                                @if($errors->has('title'))
+                                @if($errors->has('name'))
                                     <span class="help-block">{{$errors->first('title')}}</span>
                                 @endif
                             </div>
-                            <div class="form-group {{$errors->has('slug')? 'has-error': ''}}">
-                                {!! Form::label('slug') !!}
-                                {!! Form::text('slug', null, ['class'=>'form-control']) !!}
+                            <div class="form-group {{$errors->has('email')? 'has-error': ''}}">
+                                {!! Form::label('email') !!}
+                                {!! Form::text('email', null, ['class'=>'form-control']) !!}
 
-                                @if($errors->has('slug'))
-                                    <span class="help-block">{{$errors->first('slug')}}</span>
+                                @if($errors->has('email'))
+                                    <span class="help-block">{{$errors->first('email')}}</span>
+                                @endif
+                            </div>
+                            <div class="form-group {{$errors->has('password')? 'has-error': ''}}">
+                                {!! Form::label('password') !!}
+                                {!! Form::password('password',['class'=>'form-control']) !!}
+
+                                @if($errors->has('password'))
+                                    <span class="help-block">{{$errors->first('password')}}</span>
+                                @endif
+                            </div>
+                            <div class="form-group {{$errors->has('password')? 'has-error': ''}}">
+                                {!! Form::label('password_confirmation', 'Confirm Password') !!}
+                                {!! Form::password('password_confirmation', ['class'=>'form-control']) !!}
+
+                                @if($errors->has('password'))
+                                    <span class="help-block">{{$errors->first('password')}}</span>
                                 @endif
                             </div>
                             <div class="form-group">
                                 {!! Form::submit('Update', ['class'=>'btn btn-warning']) !!}
-                                <a href="{{route('categories.index')}}" class="btn btn-default">Back</a>
+                                <a href="{{route('users.index')}}" class="btn btn-default">Back</a>
                             </div>
                             {!! Form::close() !!}
                         </div>
@@ -70,19 +86,5 @@
 @endsection
 
 @section('script')
-    <script type="text/javascript">
-        /*
-         making slug automatically
-        */
-        $('#title').on('blur', function() {
-            var theTitle = this.value.toLowerCase().trim(),
-                slugInput = $('#slug');
-            theSlug = theTitle.replace(/&/g, '-and-')
-                .replace(/[^a-z$0-9-]+/g, '-')
-                .replace(/\-\-+/g, '-')
-                .replace(/^-+|-+$/g, '')
 
-            slugInput.val(theSlug);
-        });
-    </script>
 @endsection
