@@ -9,6 +9,11 @@
                         <p>Search result for: <strong>{{$term}}</strong></p>
                     </div>
                 @endif
+                @if(isset($tagName))
+                    <div class="alert alert-info">
+                        <p>Post from <strong>{{$tagName}}</strong></p>
+                    </div>
+                @endif
                 @if(! $posts->count())
                     <div class="alert alert-warning">
                        No post found!

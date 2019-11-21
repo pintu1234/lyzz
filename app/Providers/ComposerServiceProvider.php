@@ -4,6 +4,7 @@ namespace App\Providers;
 
 use App\Category;
 use App\Post;
+use App\Tag;
 use Illuminate\Support\ServiceProvider;
 
 class ComposerServiceProvider extends ServiceProvider
@@ -39,6 +40,12 @@ class ComposerServiceProvider extends ServiceProvider
             $popularPosts = Post::published()->popular()->take(4)->get();
 
             return $view->with('popularPosts', $popularPosts);
+        });
+
+        #...popular posts
+        view()->composer('layouts.sidebar', function ($view){
+            $tags = Tag::has('posts')->get();
+            return $view->with('tags', $tags);
         });
     }
 }

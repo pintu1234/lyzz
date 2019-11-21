@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use App\Category;
 use App\Post;
+use App\Tag;
 use App\User;
 use Illuminate\Http\Request;
 
@@ -13,7 +14,8 @@ class BlogController extends Controller
     {
         #composerServiceProvider load here...
 
-        $posts = Post::latestFirst()
+        $posts = Post::with('author', 'category', 'tags')
+                ->latestFirst()
                 ->published()
                 ->search(request('term'))
                 ->Paginate(4);
@@ -66,5 +68,17 @@ class BlogController extends Controller
        /* $posts = Post::latestFirst()->published()->where('author_id', $id)->paginate(4);*/
         $posts = User::findOrFail($id)->posts()->latestFirst()->published()->paginate(4);
         return view('users.blog.index', compact('posts'));
+    }
+
+    public function tag(Tag $tag)
+    {
+        $tagName = $tag->name;
+        $posts = $tag->posts()
+            ->with('author', 'tags')
+            ->latestFirst()
+            ->published()
+            ->paginate(4);
+
+        return view('users.blog.index', compact('posts', 'tagName'));
     }
 }

@@ -25,6 +25,7 @@ Route::get('/category/{category}', [
     'as'    => 'category'
 ]);
 Route::get('/author/{author}',['uses'=>'BlogController@author', 'as'=>'author']);
+Route::get('/tag/{tag}',['uses'=>'BlogController@tag', 'as'=>'tag']);
 
 /*
  * Backend / Admin routes
