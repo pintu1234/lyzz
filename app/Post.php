@@ -98,6 +98,26 @@ class Post extends Model
     {
         return $query->where('author_id', '=', Auth::user()->id);
     }
+    public function scopeSearch($query, $term)
+    {
+        //check if any term entered
+        if($term)
+        {
+            $query->where(function ($q) use ($term){
+
+                $q->whereHas('author', function ($qr) use ($term)
+                {
+                    $qr->where('name', 'LIKE', "%{$term}%");
+                });
+                /*$q->orwhereHas('category', function ($qr) use ($term)
+                {
+                    $qr->where('title', 'LIKE', "%{$term}%");
+                });*/
+                $q->orwhere('title', 'LIKE', "%{$term}%");
+                $q->orWhere('excerpt', 'LIKE', "%{$term}%");
+            });
+        }
+    }
 
 
 }

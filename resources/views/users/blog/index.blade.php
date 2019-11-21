@@ -3,6 +3,12 @@
     <div class="container">
         <div class="row">
             <div class="col-md-8">
+                {{--Search alert--}}
+                @if($term = request('term'))
+                    <div class="alert alert-info">
+                        <p>Search result for: <strong>{{$term}}</strong></p>
+                    </div>
+                @endif
                 @if(! $posts->count())
                     <div class="alert alert-warning">
                        No post found!
@@ -42,7 +48,7 @@
                 @endif
 
                 <nav class="text-center">
-                        {{$posts->render()}}
+                        {{$posts->appends(request()->only(['term']))->render()}}
                 </nav>
             </div>
 

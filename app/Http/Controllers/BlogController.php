@@ -15,6 +15,7 @@ class BlogController extends Controller
 
         $posts = Post::latestFirst()
                 ->published()
+                ->search(request('term'))
                 ->Paginate(4);
 
         return view('users.blog.index', compact('posts'));
