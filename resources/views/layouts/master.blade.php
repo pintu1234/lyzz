@@ -34,7 +34,7 @@
                     @if(! Auth::check())
                     <li class="login"><a href="{{url('login')}}"><i class="fa fa-lock"></i> Login</a></li>
                     @else
-                        <li><a href="#">My account</a></li>
+                        <li><a href="{{route('home')}}">My account</a></li>
                     @endif
                 </ul>
             </div><!-- /.navbar-collapse -->
