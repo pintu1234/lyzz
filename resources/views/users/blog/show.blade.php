@@ -31,7 +31,7 @@
                                             <a href="{{route('tag', $tag->slug)}}">{{$tag->name}}, </a>
                                         @endforeach
                                     </li>
-                                    <li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+                                    <li><i class="fa fa-comments"></i><a href="#post-comments">{{$post->commentNumber()}}</a></li>
                                 </ul>
                             </div>
 
@@ -65,7 +65,7 @@
                     </div>
                 </article>
 
-               {{--Comment Here--}}
+               @include('users.blog.comments')
 
             </div>
 

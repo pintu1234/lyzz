@@ -14,7 +14,7 @@ class BlogController extends Controller
     {
         #composerServiceProvider load here...
 
-        $posts = Post::with('author', 'category', 'tags')
+        $posts = Post::with('author', 'category', 'tags', 'comments')
                 ->latestFirst()
                 ->published()
                 ->search(request('term'))
@@ -29,8 +29,10 @@ class BlogController extends Controller
 
         $post = Post::published()->findOrFail($id);
 
+        $postComments = $post->comments()->latest()->get();
+
         $post->increment('view_count');
-        return view('users.blog.show', compact('post'));
+        return view('users.blog.show', compact('post', 'postComments'));
     }
 
     //...Filtering posts by category

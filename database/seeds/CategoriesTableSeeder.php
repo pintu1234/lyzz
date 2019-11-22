@@ -29,12 +29,12 @@ class CategoriesTableSeeder extends Seeder
                 'slug'  => 'programming'
             ],
             [
-                'title' => 'Social marketing',
-                'slug'  => 'social-marketing'
+                'title' => 'Data Science',
+                'slug'  => 'data-science'
             ],
             [
-                'title' => 'Photography',
-                'slug'  => 'photography'
+                'title' => 'Mobile App',
+                'slug'  => 'mobile-app'
             ]
         ]);
     }

@@ -22,7 +22,7 @@ class PostsTableSeeder extends Seeder
         $faker = Factory::create();
         $date = Carbon::create(2019,10, 23, 6,0,0);
 
-        for($i = 1; $i <=20; $i++)
+        for($i = 1; $i <=30; $i++)
         {
             $image = "Post_Image_". rand(1,8).".png";
             $date->addDays(1);
@@ -38,7 +38,7 @@ class PostsTableSeeder extends Seeder
                 'created_at'=>clone($date),
                 'updated_at'=>clone($date),
                 'category_id'=> rand(1,5),
-                'published_at'=> $i > 5 && rand(0,1)== 0 ? NULL : $publishedDate->addDays($i+4),
+                'published_at'=> $i > 15 && rand(0,1)== 0 ? NULL : $publishedDate->addDays($i+4),
                 'view_count' => rand(1,10)*10
 
             ];

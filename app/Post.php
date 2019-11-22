@@ -12,6 +12,7 @@ class Post extends Model
 {
     use softDeletes;
     protected $guarded = [];
+
     //...Relation to author
     public function author()
     {
@@ -24,6 +25,10 @@ class Post extends Model
     public function tags()
     {
         return $this->belongsToMany(Tag::class);
+    }
+    public function comments()
+    {
+        return $this->hasMany(Comment::class);
     }
 
     //...image accessor
@@ -121,6 +126,13 @@ class Post extends Model
                 $q->orWhere('excerpt', 'LIKE', "%{$term}%");
             });
         }
+    }
+
+    // count the post comments
+    public function commentNumber()
+    {
+        $commentNumber = $this->comments->count();
+        return $commentNumber." ". str_plural('Comment', $commentNumber);
     }
 
 

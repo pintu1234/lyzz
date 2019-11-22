@@ -45,7 +45,7 @@
                                         <a href="{{route('tag', $tag->slug)}}">{{$tag->name}}, </a>
                                         @endforeach
                                     </li>
-                                    <li><i class="fa fa-comments"></i><a href="#">4 Comments</a></li>
+                                    <li><i class="fa fa-comments"></i><a href="{{ route('blog.show', $post->id)}}#post-comments">{{$post->commentNumber()}}</a></li>
                                 </ul>
                             </div>
                             <div class="pull-right">
