@@ -28,7 +28,7 @@ This is a professional blog site with laravel 5.8. Here I used **ACL- Access Con
 
 #### Configuration
 
-To run this project you have to follow as normal laravel project running procedure. After cloning the project you have to make `.evn` file by copying `.env.example` to set the database name as your need. And make a new database in your phpMyAdmin as `.env`. Then run this command in your project terminal, `php artisan migrate` for migrate all the table. After migration, `php artisan db:seed` just run this command.
+To run this project you have to follow as normal laravel project running procedure. After cloning the project you have to make `.env` file by copying `.env.example` to set the database name as your need. And make a new database in your phpMyAdmin as `.env`. Then run this command in your project terminal, `php artisan migrate` for migrate all the table. After migration, `php artisan db:seed` just run this command.
 
 Now the project is ready to run. Admin password is `secret`. For any type of queries related to this project, you can ask me. My email `tahmid.ni7@gmail.com` 
 
