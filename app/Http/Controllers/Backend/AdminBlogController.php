@@ -113,6 +113,7 @@ class AdminBlogController extends BackendController
             $image_resize = Image::make($file->getRealPath());
             $image_resize->resize(500, 270);
             $image_resize->save(public_path('img/' .$name));
+
             $input['image'] = $name;
         }
         $post = Post::findOrFail($id);

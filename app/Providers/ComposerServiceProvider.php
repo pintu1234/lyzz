@@ -42,7 +42,7 @@ class ComposerServiceProvider extends ServiceProvider
             return $view->with('popularPosts', $popularPosts);
         });
 
-        #...popular posts
+        #...tags
         view()->composer('layouts.sidebar', function ($view){
             $tags = Tag::has('posts')->get();
             return $view->with('tags', $tags);

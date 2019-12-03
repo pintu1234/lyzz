@@ -123,7 +123,7 @@ class Post extends Model
                     $qr->where('title', 'LIKE', "%{$term}%");
                 });*/
                 $q->orwhere('title', 'LIKE', "%{$term}%");
-                $q->orWhere('excerpt', 'LIKE', "%{$term}%");
+                $q->orwhere('excerpt', 'LIKE', "%{$term}%");
             });
         }
     }

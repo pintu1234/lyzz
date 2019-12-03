@@ -17,7 +17,7 @@ class PostsTableSeeder extends Seeder
         // reset the table
         DB::table('posts')->truncate();
 
-        // generate 10 dummy posts data
+        // generate 30 dummy posts data
         $posts = [];
         $faker = Factory::create();
         $date = Carbon::create(2019,10, 23, 6,0,0);
