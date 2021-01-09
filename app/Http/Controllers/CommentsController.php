@@ -18,6 +18,7 @@ class CommentsController extends Controller
         $message = [
             'body.required' => "Comment body can't be empty"
         ];
+
         $this->validate($request, $rules, $message);
 
         $input = $request->all();

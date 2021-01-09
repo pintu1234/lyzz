@@ -1,75 +1,89 @@
-<article class="post-comments" id="post-comments">
-    <h3><i class="fa fa-comments"></i> {{$post->commentNumber()}}</h3>
-
-    <div class="comment-body padding-10">
-        <ul class="comments-list">
-            @foreach($postComments as $comment)
-                <li class="comment-item">
-                    <div class="comment-heading clearfix">
-                        <div class="comment-author-meta">
-                            <h4>{{$comment->author_name}}
-                                <small>{{$comment->created_at->diffForHumans()}}</small>
-                            </h4>
-                        </div>
-                    </div>
-                    <div class="comment-content">
-                        <p>{!! Markdown::convertToHtml(e($comment->body)) !!}</p>
-                    </div>
-                </li>
-            @endforeach
-        </ul>
-
-    </div>
-
-    <div class="comment-footer padding-10">
-        <h3>Leave a comment</h3>
-
-        @include('layouts.admin.include.flash_messages')
-
-        {!! Form::open(['route'=>['blog.comments', $post->id]]) !!}
-            <div class="form-group required {{$errors->has('author_name')? 'has-error': ''}}">
-                <label for="name">Name</label>
-                {!! Form::text('author_name', null, ['class'=>'form-control']) !!}
-                @if($errors->has('author_name'))
-                    <span class="help-block">
-                        <strong>{{$errors->first('author_name')}}</strong>
-                    </span>
-                @endif
-            </div>
-            <div class="form-group required {{$errors->has('author_email')? 'has-error': ''}}">
-                <label for="email">Email</label>
-                {!! Form::text('author_email', null, ['class'=>'form-control']) !!}
-                @if($errors->has('author_email'))
-                    <span class="help-block">
-                        <strong>{{$errors->first('author_email')}}</strong>
-                    </span>
-                @endif
-            </div>
-            <div class="form-group">
-                <label for="website">Website</label>
-                {!! Form::text('author_url', null, ['class'=>'form-control']) !!}
-            </div>
-            <div class="form-group required {{$errors->has('body')? 'has-error': ''}}">
-                <label for="comment">Comment</label>
-                {!! Form::textarea('body', null, ['rows'=>5,'class'=>'form-control']) !!}
-                @if($errors->has('body'))
-                    <span class="help-block">
+<div class="full-width leave-reply">
+    <form action="{{ route('blog.comments',$post->id) }}" method="POST">
+        <div class="wrapper">
+        <div class="box a">
+            @include('layouts.admin.include.flash_messages')
+            <h3>Leave a Reply</h3>
+            <label>Your comment<span>*</span></label>
+            <textarea id="blog-leave-reply-comment" name="body" rows="8" id="blog-leave-reply-comment" onkeypress="remove_error(this.id)"></textarea>
+            @if($errors->has('body'))
+                <span class="help-block">
                         <strong>{{$errors->first('body')}}</strong>
                     </span>
-                @endif
+            @endif
+        </div>
+        <div class="box b">
+            <label>Name<span>*</span></label>
+            <input type="text" name="author_name" id="blog-leave-reply-name" onkeypress="remove_error(this.id)">
+            @if($errors->has('author_name'))
+                <span class="help-block">
+                        <strong>{{$errors->first('author_name')}}</strong>
+                    </span>
+            @endif
+        </div>
+        <div class="box c">
+            <label>Email<span>*</span></label>
+            <input type="email" name="email" id="blog-leave-reply-email" onkeypress="remove_error(this.id)">
+            @if($errors->has('email'))
+                <span class="help-block">
+                        <strong>{{$errors->first('email')}}</strong>
+                    </span>
+            @endif
+        </div>
+        <div class="box d">
+            <a id="blog-leave-reply-btn">SEND A COMMENT</a>
+            <div id="reply-submitted">
+                Your Reply Submitted Successfully
             </div>
-            <div class="clearfix">
-                <div class="pull-left">
-                    <button type="submit" class="btn btn-lg btn-success">Submit</button>
-                </div>
-                <div class="pull-right">
-                    <p class="text-muted">
-                        <span class="required">*</span>
-                        <em>Indicates required fields</em>
-                    </p>
-                </div>
+        </div>
+    </div>
+    </form>
+</div>
+
+<div class="full-width blog-comments">
+    <h4>Comments {{$post->commentNumber()}}</h4>
+    <div class="comment-content">
+        <a rel="nofollow" class="comment-reply-link">Reply</a>
+        <div class="comment-left">
+            <img src="{{ asset('images/user.svg') }}">
+        </div>
+        <div class="comment-right">
+            <h5 class="comment-author-name">User Name</h5>
+            <div class="comment-date-time"><span class="comment-date">May 20, 2017</span> at <span class="comment-time">3:11 pm</span></div>
+            <div class="comment-message">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus tortor et facilisis lobortis. Donec auctor aliquam libero nec ullamcorper. In hac habitasse platea dictumst. Nullam nec eros scelerisque, auctor mauris at, vehicula mauris. Sed ac mollis magna, in tempus eros. Duis et nibh in sapien finibus posuere at ut libero.
             </div>
-        {!! Form::close() !!}
+        </div>
+        <ol>
+            <li>
+                <div class="comment-content">
+                    <div class="comment-left">
+                        <img src="{{ asset('images/pic-3.jpg') }}">
+                    </div>
+                    <div class="comment-right">
+                        <h5 class="comment-author-name">Meghan</h5>
+                        <div class="comment-date-time"><span class="comment-date">May 20, 2017</span> at <span class="comment-time">3:11 pm</span></div>
+                        <div class="comment-message">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus tortor et facilisis lobortis. Donec auctor aliquam libero nec ullamcorper. In hac habitasse platea dictumst. Nullam nec eros scelerisque, auctor mauris at, vehicula mauris. Sed ac mollis magna, in tempus eros. Duis et nibh in sapien finibus posuere at ut libero.
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ol>
+
     </div>
 
-</article>
+    <div class="comment-content">
+        <a rel="nofollow" class="comment-reply-link">Reply</a>
+        <div class="comment-left">
+            <img src="{{ asset('images/user.svg') }}">
+        </div>
+        <div class="comment-right">
+            <h5 class="comment-author-name">User Name</h5>
+            <div class="comment-date-time"><span class="comment-date">May 20, 2017</span> at <span class="comment-time">3:11 pm</span></div>
+            <div class="comment-message">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus tortor et facilisis lobortis. Donec auctor aliquam libero nec ullamcorper. In hac habitasse platea dictumst. Nullam nec eros scelerisque, auctor mauris at, vehicula mauris. Sed ac mollis magna, in tempus eros. Duis et nibh in sapien finibus posuere at ut libero.
+            </div>
+        </div>
+    </div>
+</div>

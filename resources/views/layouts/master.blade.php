@@ -1,70 +1,80 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
-    <title>@yield('title','My Blog | Home')</title>
-    <link rel="shortcut icon" type="image/png" href="{{asset('img/favicon.png')}}">
-
-    <link href='https://fonts.googleapis.com/css?family=Raleway:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.css">
-    <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/custom.css')}}">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="robots" content="Noindex, Nofollow">
+    <title>Whatever Lyzz</title>
+    <link type="text/css" href="{{ asset('css/font-awesome.min.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('css/jquery.bxslider.css') }}" rel="stylesheet">
+    <link type="text/css" href="{{ asset('css/style.css') }}" rel="stylesheet" />
+    @stack('css')
 </head>
-<body>
-<header>
-    <nav class="navbar navbar-default navbar-fixed-top">
-        <div class="container">
-            <!-- Brand and toggle get grouped for better mobile display -->
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-menu" aria-expanded="false">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                <a class="navbar-brand" href="{{route('blog')}}">MyBlog</a>
-            </div>
 
-            <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="main-menu">
-                <ul class="nav navbar-nav navbar-right">
-                    <li class="active"><a href="{{route('blog')}}">Blog</a></li>
-                    <li><a href="#">About</a></li>
-                    <li><a href="#">Contact</a></li>
-                    @if(! Auth::check())
-                    <li class="login"><a href="{{url('login')}}"><i class="fa fa-lock"></i> Login</a></li>
-                    @else
-                        <li><a href="{{route('home')}}">My account</a></li>
-                    @endif
-                </ul>
-            </div><!-- /.navbar-collapse -->
-        </div><!-- /.container -->
-    </nav>
+<body>
+<!-- Header -->
+<header>
+    <div class="logo">
+        <a href="{{ route('home') }}"><img src="{{ asset('images/Logo.png') }}" /></a>
+    </div>
+    <div class="menu">
+        <a class="menu-icon anim"><img src="{{ asset('images/menu-icon.svg') }}" /></a>
+    </div>
 </header>
 
+<!-- Navigation -->
+<nav class="navigation">
+    <a class="nav-close anim"><img src="{{ asset('images/nav-close.svg') }}" /></a>
+    <ul>
+        <li><a href="{{ route('home') }}">Home</a></li>
+        <li><a href="{{ route('blog.list') }}">Blog</a></li>
+        <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
+    </ul>
+</nav>
     @yield('content')
 
-<footer>
-    <div class="container">
-        <div class="row">
-            <div class="col-md-8">
-                <p class="copyright">&copy; tahmid-ni7 {{date('Y')}}</p>
+<!-- Footer -->
+<footer class="full-width">
+    <div class="full-width links-map">
+        <div class="container">
+            <div>
+                <img src="{{ asset('images/Logo-white.png') }}" width="80" />
+                <p class="full-width">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
             </div>
-            <div class="col-md-4">
-                <nav>
-                    <ul class="social-icons">
-                        <li><a href="#" class="i fa fa-facebook"></a></li>
-                        <li><a href="#" class="i fa fa-twitter"></a></li>
-                        <li><a href="#" class="i fa fa-google-plus"></a></li>
-                        <li><a href="#" class="i fa fa-github"></a></li>
-                    </ul>
-                </nav>
+            <div>
+                <h2 class="full-width title2"><span>QUICK LINKS</span></h2>
+                <ul>
+                    <li><a href="{{ route('home') }}">Home</a></li>
+                    <li><a href="{{ route('blog.list') }}">Blog</a></li>
+                    <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="full-width title2"><span>CONTACT INFO</span></h2>
+                <div class="full-width address">
+                    <a href="tel:+18004999963" class="tel">(1800) 499 9963</a>
+                    <p>25 Newbridge Rd, Suite 302<br /> Hicksville, NY, 11801</p>
+                    <p>Email :<br /><a href="mailto:info@cottagehomecare.com">info@cottagehomecare.com</a></p>
+                </div>
+            </div>
+            <div>
+                <img src="{{ asset('images/map.jpg') }}" class="full-width" />
             </div>
         </div>
     </div>
+    <div class="copyright">© Copyright 2020 Whatever Lyzz.</div>
+    <div class="social-icons">
+        <a href=""><i class="icon-facebook"></i></a>
+        <a href=""><i class="icon-linkedin"></i></a>
+        <a href=""><i class="icon-twitter"></i></a>
+        <a href=""><i class="icon-google-plus"></i></a>
+    </div>
 </footer>
 
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/jquery.bxslider.js') }}"></script>
+<script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+@stack('scripts')
 </body>
 </html>

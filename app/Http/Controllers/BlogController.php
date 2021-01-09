@@ -22,6 +22,30 @@ class BlogController extends Controller
 
         return view('users.blog.index', compact('posts'));
     }
+    public function blogs()
+    {
+        #composerServiceProvider load here...
+
+        $posts = Post::with('author', 'category', 'tags', 'comments')
+                ->latestFirst()
+                ->published()
+                ->search(request('term'))
+                ->Paginate(4);
+
+        return view('users.blog.list', compact('posts'));
+    }
+    public function contactUs()
+    {
+        #composerServiceProvider load here...
+
+        $posts = Post::with('author', 'category', 'tags', 'comments')
+                ->latestFirst()
+                ->published()
+                ->search(request('term'))
+                ->Paginate(4);
+
+        return view('contact-us', compact('posts'));
+    }
 
     public function show($id)
     {

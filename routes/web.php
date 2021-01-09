@@ -14,7 +14,9 @@
 /*
  * public routes
  */
-Route::get('/', ['uses'=>'BlogController@index', 'as'=>'blog']);
+Route::get('/', ['uses'=>'BlogController@index', 'as'=>'home']);
+Route::get('/blogs', ['uses'=>'BlogController@blogs'])->name('blog.list');
+Route::get('/contact-us', ['uses'=>'BlogController@contactUs'])->name('blog.contactus');
 
 Route::get('/blog/{post}', [
     'uses' => 'BlogController@show',
@@ -32,8 +34,8 @@ Route::get('/tag/{tag}',['uses'=>'BlogController@tag', 'as'=>'tag']);
  * Backend / Admin routes
  */
 Auth::routes();
+Route::get('home', 'Backend\HomeController@index')->name('blog');
 
-Route::get('/home', 'Backend\HomeController@index')->name('home');
 Route::get('/logout', 'CustomLoginController@logout');
 
 /* ===== Admin Posts routes =====*/
