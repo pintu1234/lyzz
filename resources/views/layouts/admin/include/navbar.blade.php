@@ -4,7 +4,7 @@
         <!-- mini logo for sidebar mini 50x50 pixels -->
         <span class="logo-mini"><b>M</b>B</span>
         <!-- logo for regular state and mobile devices -->
-        <span class="logo-lg"><b>MY</b>BLOG</span>
+        <span class="logo-lg"><b>Lyzz</b>Admin</span>
     </a>
     <!-- Header Navbar: style can be found in header.less -->
     <nav class="navbar navbar-static-top">
@@ -29,7 +29,7 @@
                             <img src="{{Auth::user()->gravatar()}}" class="img-circle" alt="User Image">
 
                             <p>
-                                {{Auth::user()->name}} - {{ucwords(Auth::user()->roles()->first()->name)}}
+                                {{Auth::user()->name}}
                             </p>
                         </li>
                         <!-- Menu Footer-->

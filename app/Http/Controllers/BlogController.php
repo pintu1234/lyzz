@@ -30,7 +30,7 @@ class BlogController extends Controller
                 ->latestFirst()
                 ->published()
                 ->search(request('term'))
-                ->Paginate(4);
+                ->get();
 
         return view('users.blog.list', compact('posts'));
     }
