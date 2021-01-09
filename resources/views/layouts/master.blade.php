@@ -53,9 +53,9 @@
             <div>
                 <h2 class="full-width title2"><span>CONTACT INFO</span></h2>
                 <div class="full-width address">
-                    <a href="tel:+18004999963" class="tel">(1800) 499 9963</a>
-                    <p>25 Newbridge Rd, Suite 302<br /> Hicksville, NY, 11801</p>
-                    <p>Email :<br /><a href="mailto:info@cottagehomecare.com">info@cottagehomecare.com</a></p>
+                    <a href="tel:+18004999963" class="tel">(1800) 499 9456</a>
+                    <p>Ahmedabad<br /> Gujarat, India, 380009</p>
+                    <p>Email :<br /><a href="mailto:info@gmail.com">info@gmail.com</a></p>
                 </div>
             </div>
             <div>

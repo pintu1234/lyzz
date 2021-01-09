@@ -3,13 +3,6 @@
 
     <!-- Banner -->
     <div class="full-width banner"></div>
-    <!-- Profile -->
-    <div class="full-width profile">
-        <div class="profile-content">
-            With fame comes opportunity, but it also includes responsibility to advocate and share, to focus less on glass slippers and more on pushing through glass ceilings.<br /><br />
-            <span>— MEGHAN MARKLE</span>
-        </div>
-    </div>
 
     <!-- Latest Blogs -->
     <div class="full-width latest-blogs">
