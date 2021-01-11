@@ -24,7 +24,7 @@
                 <li><a href="{{ route('home') }}">Home</a></li>
                 <li><a href="{{ route('blog.list') }}" class="active">Blog</a></li>
                 <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
-                <li><a href="https://lyzz.hcbspro.com/public/login" class="btn-pink">Login</a></li>
+                <li><a href="https://lyzz.hcbspro.com/login" class="btn-pink">Login</a></li>
             </ul>	
         </div>
         <div class="social-icons">
@@ -46,7 +46,7 @@
         <li><a href="{{ route('home') }}">Home</a></li>
         <li><a href="{{ route('blog.list') }}">Blog</a></li>
         <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
-        <li><a href="https://lyzz.hcbspro.com/public/login" style="color: orange;">Login</a></li>
+        <li><a href="https://lyzz.hcbspro.com/login" style="color: orange;">Login</a></li>
     </ul>
 </nav>
 
