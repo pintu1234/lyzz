@@ -82,8 +82,10 @@ header {
 	left: 0;
 	width: 100%;
 	z-index: 9999;
-	background: rgba(255, 255, 255, 0.5);
+	background: #fff;
 	min-height: 60px;
+	display: flex;
+    justify-content: space-between;
 }
 
 header .logo {
@@ -97,7 +99,10 @@ header .logo img {
 	width: 100%;
 	height: auto;
 }
-
+head-navigation{display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 900px;}
 header .menu {
 	float: right;
 }
@@ -592,16 +597,16 @@ footer .copyright {
 	padding: 15px;
 }
 
-footer .social-icons {
+.social-icons {
 	float: right;
 	padding: 15px;
 }
 
-footer .social-icons a {
+.social-icons a {
 	display: inline-block;
 	width: 27px;
 	height: 26px;
-	border: 1px solid #FFF;
+	border: 1px solid #c2c1c1;
 	border-radius: 100%;
 	-webkit-border-radius: 100%;
 	text-align: center;
@@ -614,8 +619,8 @@ footer .social-icons a {
 	transition: all 0.5s ease;
 }
 
-footer .social-icons a i {
-	color: #2368ea;
+.social-icons a i {
+	color: rgb(135, 131, 131);
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -639,6 +644,7 @@ footer .social-icons a i {
 	.latest-blogs .blogs-listing {
 		width: 100%;
 	}
+	
 }
 
 @media screen and (max-width: 768px) {
@@ -646,19 +652,27 @@ footer .social-icons a i {
 		padding: 450px 60px 50px;
 		background-position: 35% top;
 	}
-
 	.profile .profile-content {
 		width: 100%;
 	}
 
 	footer .container {
 		grid-template-columns: 1fr 1fr;
-		grid-row-gap: 50px;
+		grid-row-gap: 20px;
 	}
+	
 }
-
 @media screen and (max-width: 767px) {
-
+	footer .links-map {
+		background: #2a313d;
+		color: #FFF;
+		padding: 20px 0px;
+	}
+	.social-icons {
+		float: left;
+		padding: 0 15px 30px 15px;
+	}
+	footer .copyright{padding: 30px 15px 15px 15px;}
 	.navigation {
 		width: 100%;
 	}
@@ -687,7 +701,7 @@ footer .social-icons a i {
 
 	footer .container {
 		grid-template-columns: 1fr;
-		grid-row-gap: 50px;
+		grid-row-gap: 26px;
 	}
-
+	
 }
