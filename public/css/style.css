@@ -701,7 +701,7 @@ footer .copyright {
 
 	footer .container {
 		grid-template-columns: 1fr;
-		grid-row-gap: 26px;
+		grid-row-gap: 26px; 
 	}
 	
 }
