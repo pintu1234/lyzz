@@ -18,6 +18,22 @@
     <div class="logo">
         <a href="{{ route('home') }}"><img src="{{ asset('images/Logo.png') }}" /></a>
     </div>
+    <div class="head-navigation">
+        <div class="head-nav">
+            <ul>
+                <li><a href="{{ route('home') }}">Home</a></li>
+                <li><a href="{{ route('blog.list') }}" class="active">Blog</a></li>
+                <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
+                <li><a href="https://lyzz.hcbspro.com/public/login" class="btn-pink">Login</a></li>
+            </ul>	
+        </div>
+        <div class="social-icons">
+            <a href=""><i class="icon-facebook"></i></a>
+            <a href=""><i class="icon-linkedin"></i></a>
+            <a href=""><i class="icon-twitter"></i></a>
+            <a href=""><i class="icon-google-plus"></i></a>
+        </div>
+    </div>
     <div class="menu">
         <a class="menu-icon anim"><img src="{{ asset('images/menu-icon.svg') }}" /></a>
     </div>
@@ -33,6 +49,7 @@
         <li><a href="https://lyzz.hcbspro.com/public/login" style="color: orange;">Login</a></li>
     </ul>
 </nav>
+
     @yield('content')
 
 <!-- Footer -->
