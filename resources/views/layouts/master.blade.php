@@ -30,6 +30,7 @@
         <li><a href="{{ route('home') }}">Home</a></li>
         <li><a href="{{ route('blog.list') }}">Blog</a></li>
         <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
+        <li><a href="https://lyzz.hcbspro.com/public/login" style="color: orange;">Login</a></li>
     </ul>
 </nav>
     @yield('content')

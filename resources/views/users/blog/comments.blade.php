@@ -41,8 +41,8 @@
 </div>
 
 <div class="full-width blog-comments">
-    <h4>Comments {{$post->commentNumber()}}</h4>
-    <div class="comment-content">
+    <h4>{{$post->commentNumber()}}</h4>
+<!--    <div class="comment-content">
         <a rel="nofollow" class="comment-reply-link">Reply</a>
         <div class="comment-left">
             <img src="{{ asset('images/user.svg') }}">
@@ -71,9 +71,9 @@
             </li>
         </ol>
 
-    </div>
+    </div>-->
 
-    <div class="comment-content">
+<!--    <div class="comment-content">
         <a rel="nofollow" class="comment-reply-link">Reply</a>
         <div class="comment-left">
             <img src="{{ asset('images/user.svg') }}">
@@ -85,5 +85,5 @@
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec tempus tortor et facilisis lobortis. Donec auctor aliquam libero nec ullamcorper. In hac habitasse platea dictumst. Nullam nec eros scelerisque, auctor mauris at, vehicula mauris. Sed ac mollis magna, in tempus eros. Duis et nibh in sapien finibus posuere at ut libero.
             </div>
         </div>
-    </div>
+    </div>-->
 </div>

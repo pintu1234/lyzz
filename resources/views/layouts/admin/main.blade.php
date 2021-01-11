@@ -3,7 +3,7 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>@yield('title', 'Lyzz Admin')</title>
+    <title>@yield('title', 'Welcome, Lyzz')</title>
     <!-- Tell the browser to be responsive to screen width -->
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <!-- Bootstrap 3.3.6 -->
@@ -44,7 +44,7 @@
     <footer class="main-footer">
         <div class="pull-right hidden-xs">
         </div>
-        <strong>Copyright &copy; {{date('Y')}} <a href="#">tahmid-ni7</a>.</strong> All rights
+        <strong>Copyright &copy; {{date('Y')}} <a href="#">Lyzz</a>.</strong> All rights
         reserved.
     </footer>
 

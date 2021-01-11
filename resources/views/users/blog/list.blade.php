@@ -4,9 +4,9 @@
     <!-- Blog Page -->
     <div class="full-width blog-page">
         <div class="full-width blog-listing">
-            <h1>Welcome to our Blog</h1>
+            <h1>Blogs</h1>
 
-            <div class="search-category">
+<!--            <div class="search-category">
                 <div class="category-search" id="blog-category-search">
                     <a>Search <i class="icon-caret-down"></i></a>
                     <div class="category-list" id="blog-category-list">
@@ -26,7 +26,7 @@
                     </div>
                 </div>
                 <div class="selected-category" id="blog-selected-category-list"></div>
-            </div>
+            </div>-->
 
             <div id="blog-pages-container">
                 <div class="current">

@@ -3,7 +3,7 @@
 @section('content')
     <div class="login-box">
         <div class="login-logo">
-            <a href="{{route('blog')}}"><b>My</b>Blog</a>
+            <a href="{{route('blog')}}"><b>Welcome Back, Lyzz</b></a>
         </div>
         <!-- /.login-logo -->
         <div class="login-box-body">
@@ -12,7 +12,8 @@
             <form method="POST" action="{{ url('/login') }}">
                 {{ csrf_field() }}
                 <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }} has-feedback">
-                    <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">
+                    <input type="email" class="form-control" placeholder="Email" name="email" value="admin@gmail.com">
+<!--                    <input type="email" class="form-control" placeholder="Email" name="email" value="{{ old('email') }}">-->
                     <span class="fa fa-envelope form-control-feedback"></span>
                     @if ($errors->has('email'))
                         <span class="help-block">
@@ -21,7 +22,7 @@
                     @endif
                 </div>
                 <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }} has-feedback">
-                    <input type="password" name="password" class="form-control" placeholder="Password">
+                    <input type="password" name="password" class="form-control" placeholder="Password" value="password">
                     <span class="fa fa-lock form-control-feedback"></span>
                     @if ($errors->has('password'))
                         <span class="help-block">
@@ -46,7 +47,7 @@
             </form>
 
             <br>
-            <a href="{{ url('/password/reset') }}">I forgot my password</a><br>
+            <!--<a href="{{ url('/password/reset') }}">I forgot my password</a><br>-->
 
         </div>
         <!-- /.login-box-body -->
