@@ -1,10 +1,27 @@
 @extends('layouts.master')
 @section('content')
-
+<div class="full-width bg-white">
+	<div class="contain">
+		<div class="border-1"></div>
+		<div class="head-nav">
+			<ul>
+				<li><a href="#">FOOD</a></li>
+				<li><a href="#">TRAVEL</a></li>
+				<li><a href="#">LIVING</a></li>
+				<li><a href="#">FASHION</a></li>
+				<li><a href="#">BEAUTY</a></li>
+				<li><a href="#">INFLUENCERS</a></li>
+				<li><a href="#">SHOP</a></li>
+			</ul>
+		</div>
+		<div class="border-1"></div>
+	</div>
+</div>
     <!-- Blog Page -->
     <div class="full-width blog-page">
         <div class="full-width blog-listing">
-            <h1>Blogs</h1>
+            <p class="head-title">ARCHIVE OF LYZZ'S INSPIRED LIFESTYLE BLOG</p>
+			<h1>Welcome to our Blog</h1>
 
 <!--            <div class="search-category">
                 <div class="category-search" id="blog-category-search">
