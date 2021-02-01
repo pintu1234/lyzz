@@ -4,7 +4,7 @@
         <!-- Sidebar user panel -->
         <div class="user-panel">
             <div class="pull-left image">
-                <img src="https://lyzz.hcbspro.com/public/images/Logo.png" class="img-circle" alt="User Image">
+                <img src="https://lyzz.hcbspro.com/images/Logo.png" class="img-circle" alt="User Image">
 <!--                <img src="{{Auth::user()->gravatar()}}" class="img-circle" alt="User Image">-->
             </div>
             <div class="pull-left info">

@@ -1,18 +1,34 @@
 @extends('layouts.master')
 @section('content')
 
-    <!-- Banner -->
-    <div class="full-width banner"></div>
-    <!-- Profile -->
-    <div class="full-width profile">
-        <div class="profile-content">
-            With fame comes opportunity, but it also includes responsibility to advocate and share, to focus less on glass slippers and more on pushing through glass ceilings.<br /><br />
-            <span>— MEGHAN MARKLE</span>
-        </div>
-    </div>
+<div class="full-width bg-white">
+		<div class="contain">
+			<div class="border-1"></div>
+			<div class="head-nav font">
+				<ul>
+					<li><a href="#">FOOD</a></li>
+					<li><a href="#">TRAVEL</a></li>
+					<li><a href="#">LIVING</a></li>
+					<li><a href="#">FASHION</a></li>
+					<li><a href="#">BEAUTY</a></li>
+					<li><a href="#">INFLUENCERS</a></li>
+					<li><a href="#">SHOP</a></li>
+				</ul>
+			</div>
+			<div class="border-1"></div>
+		</div>
+	</div>
+	<!-- Banner -->
+	<div class="full-width banner">
+		<div class="profile-content">
+			With fame comes opportunity, but it also includes responsibility to advocate and share, to focus less on glass slippers and more on pushing through glass ceilings.<br />
+			<span class="mt-20">— LYZZ</span><br>
+			<img src="./images/signature.svg" class="signature">
+		</div>
+	</div>
 
     <!-- Latest Blogs -->
-    <div class="full-width latest-blogs">
+    <div class="full-width latest-blogs mt-130">
         <h1>LATEST ON THE BLOG</h1>
         <div class="blogs-listing">
             {{--Search alert--}}
