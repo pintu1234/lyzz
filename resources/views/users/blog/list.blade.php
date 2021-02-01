@@ -1,22 +1,6 @@
 @extends('layouts.master')
 @section('content')
-<div class="full-width bg-white">
-	<div class="contain">
-		<div class="border-1"></div>
-		<div class="head-nav">
-			<ul>
-				<li><a href="#">FOOD</a></li>
-				<li><a href="#">TRAVEL</a></li>
-				<li><a href="#">LIVING</a></li>
-				<li><a href="#">FASHION</a></li>
-				<li><a href="#">BEAUTY</a></li>
-				<li><a href="#">INFLUENCERS</a></li>
-				<li><a href="#">SHOP</a></li>
-			</ul>
-		</div>
-		<div class="border-1"></div>
-	</div>
-</div>
+    @extends('layouts.sections.categoryList')
     <!-- Blog Page -->
     <div class="full-width blog-page">
         <div class="full-width blog-listing">
