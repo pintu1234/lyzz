@@ -3,15 +3,28 @@
 
     @extends('layouts.sections.categoryList')
 	<!-- Banner -->
-	<div class="full-width banner">
-		<div class="profile-content">
-			With fame comes opportunity, but it also includes responsibility to advocate and share, to focus less on glass slippers and more on pushing through glass ceilings.<br />
-			<span class="mt-20">— LYZZ</span><br>
-			<img src="./images/signature.svg" class="signature">
-		</div>
+	<div class="full-width d-block bg_white">
+    <img  src="../images/banner-pic-2.svg" class="img_100">
+    </div>
+        <div class="full-width bg_white">    
+                <div class="profile-content1">
+                <span class="mt-20" style="font-size: 25px;line-height: 44px;font-weight: 600;">Welcome to Whatever, Lyzz</span><br>
+                    I want to start off by saying that Whatever, Lyzz isn’t a lifestyle blog. It isn’t a place where we will tell you the best places to eat, “it” fashions of today, the fantastic traveling spots you should book. We won’t even give you tips on your love life. Whatever, Lyzz is more of a digital journal, a safe space.<br><br>
+
+            It is a place where its owner, and at times guest writers share their real-life experiences. The things they are learning, evolving from, the changes they are making. During these candid moments, you will learn of the incredible food they’ve indulged in. Their amazing finds. Their travel stories. You will even know of their love lives. The things they regret. The truths they wish someone had told them.<br><br>
+
+            In this space, all will be discussed and delve into. There will be no topic off-limits. There will be no shame of who we once were and who we wish to become. Most importantly, we will embrace who we are right now, the things available to us at this moment. Whatever, Lyzz is a place where Lyzz gets to say whatever comes to mind. Unadulterated, Unpretentious, Unbothered, Unapologetic.<br><br>
+
+            This is a safe space. A virtual room where we get to say what’s important (or unimportant) to us. A space where we get to be versions of ourselves that we hide from the world. Hopefully, in these sharing, you will see yourself, you’ll find laughter, the strength to try new things, or flourish. Maybe you’ll cry those tears that you’re so afraid of drowning in. Perhaps you’ll just stand still, and that’s okay. As long as you’re standing in your truth.<br><br>
+            So welcome, and we hope that whatever it is you find is just what your soul needed. 
+            <br />
+            <span class="flexpro">—<img src="./images/signature1.svg" class="signature"></span>
+                
+        </div>
+       
 	</div>
     <!-- Latest Blogs -->
-    <div class="full-width latest-blogs mt-130">
+    <!-- <div class="full-width latest-blogs mt-130">
         <h1>LATEST ON THE BLOG</h1>
         <div class="blogs-listing">
             {{--Search alert--}}
@@ -47,7 +60,7 @@
                 @endif
             </ul>
         </div>
-    </div>
+    </div> -->
 @endsection
 
 

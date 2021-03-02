@@ -88,10 +88,15 @@ ul {
 	list-style: none;
 }
 
-::-webkit-scrollbar-track {background-color:#fff}
-::-webkit-scrollbar {width:6px;}
-::-webkit-scrollbar-thumb {background-color:#CACCD1; border-radius:25px; -webkit-border-radius:25px}
 
+body::-webkit-scrollbar-track {background-color:#E2E4F6}
+body::-webkit-scrollbar {width:6px;}
+body::-webkit-scrollbar-thumb {background-color:#9ea0e1; border-radius:25px; -webkit-border-radius:25px}
+.navigation::-webkit-scrollbar-track {background-color:#000}
+.navigation::-webkit-scrollbar {width:6px;}
+.navigation::-webkit-scrollbar-thumb {background-color:#000; border-radius:25px; -webkit-border-radius:25px}
+.scrollbar2{height: 650px;}
+/* .scrollbar{margin:0;height:150px;width:100%;background:none;overflow:hidden;overflow-y:scroll} */
 .full-width {
 	float: left;
 	width: 100%;
@@ -101,7 +106,7 @@ ul {
 .text-center {
 	text-align: center;
 }
-
+.flex_p{display: flex;flex-wrap: wrap;flex-direction: column;}
 .anim {
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -119,7 +124,7 @@ header {
 	background: #fff;
 	min-height: 60px;
 	display: flex;
-    justify-content: space-between;animation: 2s ease-in-out 1 normal both running bounceInLeft;
+    justify-content: space-between;animation: 2s ease-in-out 1 normal both running bounceInLeft;    align-items: center;
 }
 
 header .logo {
@@ -138,6 +143,7 @@ head-navigation{display: flex;
     align-items: center;
     width: 900px;}
 header .menu {
+	display:none;
 	float: right;
 }
 
@@ -202,7 +208,7 @@ header .menu .menu-icon img {
 .navigation ul {
 	display: block;
 	width: 100%;
-	padding: 50px 30px 30px;
+	padding: 50px 30px 0 30px;
 }
 
 .navigation ul li {
@@ -232,26 +238,85 @@ header .menu .menu-icon img {
 	-webkit-background-clip: text;
 	-webkit-text-fill-color: transparent;
 }
-
+.navigation ul li.active a{font-weight: 500;background: -webkit-linear-gradient(0deg, #2368ea, #e84b78);
+    background: -webkit-gradient(linear, left top, right top, from(#2368ea), to(#e84b78));
+    background: linear-gradient(to right, #2368ea 0%, #e84b78 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;}
 .banner {
 	height: 100vh;
-	background: url(../images/banner-pic-1.jpg) no-repeat top left;
+	background: url(../images/banner-pic-2.jpg) no-repeat top left;
 	background-size: cover;
 	background-position: center;
 	position: relative;
 }
-
+.food {
+	opacity: 0.5;
+	height: 100vh;
+	background: url(../images/food.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.life {
+	opacity: 0.5;
+	height: 100vh;
+	background: url(../images/life.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.love {
+	opacity: 0.5;
+	height: 100vh;
+	background: url(../images/love.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.travel {
+	opacity: 0.5;
+	height: 100vh;
+	background: url(../images/Travel1.jpeg) no-repeat top left;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.wellness {
+	opacity: 0.5;
+	height: 100vh;
+	background: url(../images/well1.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.silverlinings {
+	opacity: 0.5;
+	height: 100vh;
+	background: url(../images/silverlinings.jpg) no-repeat top left;
+	background-size: cover;
+	background-position: center;
+	position: relative;
+}
+.life_bg{background: #FAC987!important;}
+.love_bg{background: #dab1be!important;}
+.travel_bg{background: #a8c19c!important;}
+.wellness_bg{background: #f7aab9!important;}
+.silverlinings_bg{background: #9c9e91!important;}
+.food_bg{background: #4e5154!important;}
 .profile {
 	padding: 250px 60px;
 	background: url(../images/profile-bg.jpg) no-repeat;
 	background-position: 20% top;
 }
 
-.banner .profile-content {
+ .profile-content {
 	position: absolute;
     z-index: 1;
-    left: 32%;
-    top: 75%;
+    left: 0;
+    right: 0;
+    bottom: -92px;
+    margin: auto;
     width: 550px;
     background: #000;
     padding: 30px;
@@ -264,11 +329,29 @@ header .menu .menu-icon img {
     font-style: italic;animation: 2s ease-in-out 1 normal both running fadeInUp;
 }
 
-.banner .profile-content span {
+ .profile-content span {
 	font-family: 'Playfair Display', serif;
 	font-size: 16px;
 }
-
+.bg_white{background: #fff;}
+.img_100{width:100%}
+ .profile-content1 span {
+		font-family: 'Playfair Display', serif;
+		font-size: 11px;
+	}
+	 .profile-content1 {
+		padding: 15px;
+		background: #E2E4F6;
+		padding: 30px;
+		color: #000;
+		line-height: 35px;
+		font-size: 18px;
+		font-weight: 500;
+		letter-spacing: 1px;
+		text-align: center;
+		font-style: italic;border-radius: 15px;box-shadow: 0 0 6px 0 rgb(0 0 0 / 24%);border: 1px solid #d0d0d0;margin: 50px;
+	}
+	
 .latest-blogs {
 	background: #FFF;
 	padding: 235px 20px;
@@ -571,7 +654,7 @@ footer .title2:after {
 
 footer ul li a {
 	display: inline-block;
-	color: #aaa;
+	color: #fff;
 	margin-bottom: 10px;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
@@ -653,6 +736,7 @@ footer .copyright {
 	text-align: center;
 	line-height: 24px;
 	margin-left: 5px;
+	padding: 3px;
 	-webkit-transition: all 0.5s ease;
 	-moz-transition: all 0.5s ease;
 	-ms-transition: all 0.5s ease;
@@ -677,31 +761,73 @@ footer .copyright {
 .social-icons a:hover i {
 	color: #FFF;
 }
+ul.submenu{padding:10px 36px;}
+ul.submenu li{padding: 12px;}
+ul.submenu li a{font-size: 18px!important;}
+.flexpro{display: flex;align-items: center;justify-content: center;}
 .signature{width: 100px;}
 .mt-20{margin-top: 20px;}
-.mt-130{padding: 250px 0 100px 0;animation: 2s ease-in-out 1 normal both running fadeInUp}
+.mt-130{padding: 50px;animation: 2s ease-in-out 1 normal both running fadeInUp}
 .contain{margin: 0 auto;display: flex;justify-content: center;align-items: center;animation: 2s ease-in-out 1 normal both running bounceInLeft;}
 .bg-white{background-color: #fff; margin-top: 66px;padding:20px 0px 50px 0;}
 .head-nav{text-align: center;display: flex;justify-content: center;}
 .head-nav ul{text-align: center;display: flex;justify-content: space-around;}
-.head-navigation{width: 900px;display: flex;justify-content: space-between;align-items: center;animation: 2s ease-in-out 1 normal both running fadeInUp;}
-.head-navigation ul li a{font-weight: 600;line-height: 30px;}
+.head-nav ul li a{float: left;text-align: center;padding: 0 15px;color: #878383;font-size: 14px;letter-spacing: 2px;text-transform: uppercase;}
+.head-nav ul li:hover a{color:#e84b78}
+.head-nav ul li.active a{color: #e84b78;}
+.head-navigation{display: flex;align-items: center;animation: 2s ease-in-out 1 normal both running fadeInUp;}
+.head-navigation ul li a{font-weight: 600;line-height: 30px;cursor:pointer;}
 .head-navigation ul li a.active{font-weight: 600;color: #e84b78;}
 .head-navigation ul li a.btn-pink{background-color: #e84b78;color: #fff;border: 1px solid #fff;border-radius: 5px;line-height: 30px;}
 .head-navigation ul li a.btn-pink:hover{background-color: #fff;border: 1px solid #e84b78; color: #e84b78;}
 .head-navigation ul li:hover a{font-weight: 600;color: #e84b78;pointer-events: visible;}
-.head-nav ul li a{float: left;text-align: center;padding: 0 15px;color: #878383;pointer-events: none;font-size: 14px;letter-spacing: 2px;    text-transform: uppercase;}
 .font ul li a{font-size: 13px;}
-.border-1{border-bottom: 1px solid #cfcccc;width: 50%;}
+.border-1{border-bottom: 1px solid #cfcccc;width: 33.5%;}
 .head-title{color: #878383;letter-spacing: 10px;font-size: 12px;text-align: center;padding: 20px;}
 
 /* Media Query*/
+@media  screen and (max-width: 1919px) {
+	header .menu {
+	display:none;
+	float: right;
+}
+	.border-1 {
+    width: 29.5%;}
+	.mt-130 {
+    padding-top: 630px;
+	}
+}
+@media  screen and (max-width: 1510px) {
+    .border-1 {
+    width: 27.5%;
+}
+	.mt-130 {
+    padding-top: 740px;
+}
+}
+@media  screen and (max-width: 1380px) {
+	.border-1 {
+    width: 24.5%;
+}
 
 @media screen and (max-width: 1220px) {
 	.latest-blogs .blogs-listing {
 		width: 100%;
 	}
+	::-webkit-scrollbar-track {background-color:#E2E4F6}
+::-webkit-scrollbar {width:6px;}
+::-webkit-scrollbar-thumb {background-color:#9ea0e1; border-radius:25px; -webkit-border-radius:25px}
+.scrollbar{margin:0;overflow:hidden;overflow-y:scroll}
+	.scrollbar1{height: 303px;}
 	
+	.mt-130 {
+    padding-top: 130px;
+	}
+	.border-1 {
+    width: 10.5%;
+	}
+	.profile-content1{    padding: 15px;
+    margin: 20px 40px 50px 40px}
 }
 
 @media screen and (max-width: 768px) {
@@ -709,9 +835,18 @@ footer .copyright {
 		padding: 450px 60px 50px;
 		background-position: 35% top;
 	}
-	.banner  .profile-content {
-		width: 100%;
+	 .profile-content {
+		left: 0;
+    right: 0;
+    bottom: -9px;
+    margin: auto;
+    width: 320px;
 	}
+::-webkit-scrollbar-track {background-color:#E2E4F6}
+::-webkit-scrollbar {width:6px;}
+::-webkit-scrollbar-thumb {background-color:#9ea0e1; border-radius:25px; -webkit-border-radius:25px}
+.scrollbar{margin:0;background:none;overflow:hidden;overflow-y:scroll}
+	.scrollbar1{height: 303px;}
 
 	footer .container {
 		grid-template-columns: 1fr 1fr;
@@ -720,49 +855,84 @@ footer .copyright {
 	.head-navigation{display: none;}
 	.contain{display: none;}
 	.bg-white{    margin-top: 0px;}
+	.profile-content1 { margin: 20px 15px 50px 15px;
+    padding: 15px;
+	}
+	
+	
+}
+@media screen and (max-width: 375px) {
+.social-icons {
+		float: left!important;padding: 0 15px 30px 15px!important;}
 }
 @media screen and (max-width: 767px) {
+	header .menu {
+	display:block;
+	float: right;
+}
+	/* .navigation{right: -487px!important;} */
+	.latest-blogs h1 {
+    font-size: 24px;}
+
+::-webkit-scrollbar-track {background-color:#E2E4F6}
+::-webkit-scrollbar {width:6px;}
+::-webkit-scrollbar-thumb {background-color:#9ea0e1; border-radius:25px; -webkit-border-radius:25px}
+.scrollbar{margin:0;background:none;overflow:hidden;overflow-y:scroll}
+.scrollbar1{height: 253px;}
+	/* .navigation{right: -768px;} */
 	footer .links-map {
 		background: #2a313d;
 		color: #FFF;
 		padding: 20px 0px;
 	}
+	.w_100{width: 100%;}
 	.social-icons {
-		float: left;
-		padding: 0 15px 30px 15px;
+		float: right;    
 	}
-	footer .copyright{padding: 30px 15px 15px 15px;}
-	.navigation {
+	footer .copyright{padding: 20px 15px 0 15px;}
+	/* .navigation {
 		width: 100%;
+	} */
+	
+	.mt-30 {
+		padding: 50px 0 50px 0;
 	}
-	
-	
 	.signature {
 		width: 75px;
 	}
-	.banner .profile-content span {
+	.banner {
+    height: 33vh;}
+	.profile-content1 span {
+		font-size: 18px!important;
 		font-family: 'Playfair Display', serif;
-		font-size: 11px;
 	}
-	.banner .profile-content {
-		padding: 15px;width: 87%;
-		position: absolute;
-		z-index: 1;
-		left: 5%;
-		top: 75%;
-		width: 322px;
-		background: #000;
+	.profile-content1 {
+		margin: 20px 15px 40px 15px;
+		background: #E2E4F6;
+		color: #000;
 		padding: 15px;
-		color: #FFF;
 		line-height: 19px;
-		font-size: 11px;
+		font-size: 13px;
 		font-weight: 500;
 		letter-spacing: 1px;
 		text-align: center;
 		font-style: italic;
+		border-radius: 15px;
+		box-shadow: 0 0 6px 0 rgb(0 0 0 / 24%);
+		border: 1px solid #d0d0d0;
+	}
+	
+	 .profile-content span {
+		font-family: 'Playfair Display', serif;
+		font-size: 12px;
+	}
+	.profile-content {
+		left: 0;
+		bottom: -3%;
+		font-size: 15px;
 	}
 	.mt-130 {
-		padding: 50px 0 50px 0;
+		padding:40px 0 20px 0;
 	}
 	.contact-container {
 		padding: 110px 0 50px;
@@ -777,21 +947,16 @@ footer .copyright {
 		width: calc(100% - 60px);
 		margin: 0px 30px 20px;
 	}
-
 	.contact-container ul li textarea {
 		min-height: 150px;
 	}
-
 	footer .container {
 		grid-template-columns: 1fr;
 		grid-row-gap: 26px;
-	}
-	
+	}	
 }
-
-
-    </style>
-    @stack('css')
+</style>
+@stack('css')
 </head>
 
 <body>
@@ -800,8 +965,7 @@ footer .copyright {
     <div class="logo">
         <a href="{{ route('home') }}"><img src="{{ asset('images/Logo.png') }}" /></a>
 	</div>
-	<div class="head-navigation">
-        <div class="head-nav">
+	<div class="head-nav head-navigation">
             <ul>
                 <li><a @if(Route::current()->getName() == 'home') class="active" @endif href="{{ route('home') }}">Home</a></li>
                 <li><a @if(Route::current()->getName() == 'blog.list') class="active" @endif href="{{ route('blog.list') }}">Blog</a></li>
@@ -810,26 +974,36 @@ footer .copyright {
             </ul>	
         </div>
         <div class="social-icons">
-            <a href=""><i class="icon-facebook"></i></a>
-            <a href=""><i class="icon-linkedin"></i></a>
-            <a href=""><i class="icon-twitter"></i></a>
-            <a href=""><i class="icon-google-plus"></i></a>
+            <a href="" target="_blank"><i class="icon-facebook"></i></a>
+            <a href="https://www.linkedin.com/company/whateverlyzz" target="_blank"><i class="icon-linkedin"></i></a>
+            <a href="https://twitter.com/WhateverLyzz" target="_blank"><i class="icon-twitter"></i></a>
+			<a href="https://www.instagram.com/whateverlyzz/" target="_blank"><i class="icon-instagram"></i></a>
         </div>
-    </div>
     <div class="menu">
-        <a class="menu-icon anim"><img src="{{ asset('images/menu-icon.svg') }}" /></a>
+        <a class="menu-icon anim" onclick="openNav()"><img src="{{ asset('images/menu-icon.svg') }}" /></a>
     </div>
 </header>
 
 <!-- Navigation -->
-<nav class="navigation">
-    <a class="nav-close anim"><img src="{{ asset('images/nav-close.svg') }}" /></a>
-    <ul>
-        <li><a href="{{ route('home') }}">Home</a></li>
-        <li><a href="{{ route('blog.list') }}">Blog</a></li>
-        <li><a href="{{ route('blog.contactus') }}">Contact</a></li>
-        <li><a href="https://lyzz.hcbspro.com/login" style="color: orange;">Login</a></li>
+<nav class="navigation" id="navigation">
+    <a class="nav-close anim" onclick="closeNav()"><img src="{{ asset('images/nav-close.svg') }}" /></a>
+    <div class="scrollbar scrollbar2">
+
+	<ul>
+        <li @if(Route::current()->getName() == 'home') class="active" @endif><a href="{{ route('home') }}">Home</a></li>
+        <li @if(Route::current()->getName() == 'blog.list') class="active" @endif><a href="{{ route('blog.list') }}">Blog</a></li>
+        <li @if(Route::current()->getName() == 'blog.contactus') class="active" @endif><a href="{{ route('blog.contactus') }}">Contact</a></li>
+        <li @if(Route::current()->getName() == 'blog.silverlinings') class="active" @endif style="border-bottom: 1px solid;"><a href="https://lyzz.hcbspro.com/login">Login</a></li>
+	</ul>
+	<ul class="submenu">
+		<li @if(Route::current()->getName() == 'food') class="active" @endif ><a href="https://lyzz.hcbspro.com/food" style="cursor: pointer!important;">- FOOD</a></li>
+                <li @if(Route::current()->getName() == 'blog.life') class="active" @endif ><a href="https://lyzz.hcbspro.com/life" style="cursor: pointer!important;">- LIFE</a></li>
+                <li @if(Route::current()->getName() == 'blog.love') class="active" @endif ><a href="https://lyzz.hcbspro.com/love" style="cursor: pointer!important;">- LOVE</a></li>
+                <li @if(Route::current()->getName() == 'blog.travel') class="active" @endif ><a href="https://lyzz.hcbspro.com/travel" style="cursor: pointer!important;">- TRAVEL</a></li>
+                <li @if(Route::current()->getName() == 'blog.wellness') class="active" @endif ><a href="https://lyzz.hcbspro.com/wellness" style="cursor: pointer!important;">- WELLNESS</a></li>
+                <li @if(Route::current()->getName() == 'blog.silverlinings') class="active" @endif ><a href="https://lyzz.hcbspro.com/silver-linings" style="cursor: pointer!important;">- SILVER LININGS</a></li>
     </ul>
+	</div>
 </nav>
 
     @yield('content')
@@ -840,7 +1014,7 @@ footer .copyright {
         <div class="container">
             <div>
                 <img src="{{ asset('images/Logo-white.png') }}" width="80" />
-                <p class="full-width">Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
+                <p class="full-width">Unadulterated, Unpretentious, Unbothered, Unapologetic, Whatever Comes to mind, Uncensored, all me. It's Whatever, Lyzz</p>
             </div>
             <div>
                 <h2 class="full-width title2"><span>QUICK LINKS</span></h2>
@@ -853,28 +1027,30 @@ footer .copyright {
             <div>
                 <h2 class="full-width title2"><span>CONTACT INFO</span></h2>
                 <div class="full-width address">
-                    <a href="tel:+18004999963" class="tel">(1800) 499 9456</a>
-                    <p>Ahmedabad<br /> Gujarat, India, 380009</p>
-                    <p>Email :<br /><a href="mailto:info@gmail.com">info@gmail.com</a></p>
+              		<p><strong>Phone:</strong><br>In Your Hands or Back Pocket I Suppose</p>
+                    <p><strong>Address:</strong><br /> Somewhere in My Mind</p>
+                    <p><strong>Email :</strong><br /><a href="mailto:Lyzz@WhateverLyzz.com">Lyzz@WhateverLyzz.com</a></p>
                 </div>
             </div>
-            <div>
-                <img src="{{ asset('images/map.jpg') }}" class="full-width" />
+            <div class="flex_p">
+                <img src="{{ asset('images/img.png') }}" class="full-width" style="max-width: 275px;margin-bottom: 5px;" />
+				<p style="font-size:12px;padding:0!important;">(we don't own the rights to this image)</p>
             </div>
         </div>
     </div>
     <div class="copyright">© Copyright 2020 Whatever Lyzz.</div>
-    <div class="social-icons">
-        <a href=""><i class="icon-facebook"></i></a>
-        <a href=""><i class="icon-linkedin"></i></a>
-        <a href=""><i class="icon-twitter"></i></a>
-        <a href=""><i class="icon-google-plus"></i></a>
+    <div class="social-icons w_100">
+        <a href=""><i class="icon-facebook" target="_blank"></i></a>
+        <a href="https://www.linkedin.com/company/whateverlyzz" target="_blank"><i class="icon-linkedin"></i></a>
+        <a href="https://twitter.com/WhateverLyzz" target="_blank"><i class="icon-twitter"></i></a>
+		<a href="https://www.instagram.com/whateverlyzz/" target="_blank"><i class="icon-instagram"></i></a>
     </div>
 </footer>
 
 <script type="text/javascript" src="{{ asset('js/jquery.min.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/jquery.bxslider.js') }}"></script>
 <script type="text/javascript" src="{{ asset('js/script.js') }}"></script>
+
 @stack('scripts')
 </body>
 </html>

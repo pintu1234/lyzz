@@ -99,14 +99,20 @@ $('#contact_btn').click(function (e) {
 
 $(document).ready(function () {
 
-	$('.menu-icon').click(function () {
-		$('.navigation').css("right", "0px");
-	});
+	// $('.menu-icon').click(function () {
+	// 	$('.navigation').css("right", "0px");
+	// });
 
-	$('.nav-close').click(function () {
-		$('.navigation').css("right", "-360px");
-	});
-
+	// $('.nav-close').click(function () {
+	// 	$('.navigation').css("right", "-360px");
+	// });
+	function openNav() {
+		document.getElementById("navigation").style.width = "350px";
+	  }
+	  
+	  function closeNav() {
+		document.getElementById("navigation").style.width = "0";
+	  }
 	var minSlides;
 	var maxSlides;
 
@@ -157,4 +163,3 @@ function validateEmail(sEmail) {
 		return false;
 	}
 }
-// End

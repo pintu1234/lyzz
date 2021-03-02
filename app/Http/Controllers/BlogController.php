@@ -34,6 +34,32 @@ class BlogController extends Controller
 
         return view('users.blog.list', compact('posts'));
     }
+
+    public function food()
+    {
+        return view('users.blog.food');
+    }
+    public function life()
+    {
+        return view('users.blog.life');
+    }
+    public function love()
+    {
+        return view('users.blog.love');
+    }
+    public function travel()
+    {
+        return view('users.blog.travel');
+    }
+    public function wellness()
+    {
+        return view('users.blog.wellness');
+    }
+    public function silverlinings()
+    {
+        return view('users.blog.silverlinings');
+    }
+
     public function contactUs()
     {
         #composerServiceProvider load here...

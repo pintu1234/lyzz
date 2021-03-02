@@ -7,9 +7,9 @@
 .head-navigation ul li a.btn-pink{background-color: #e84b78;color: #fff;border: 1px solid #fff;border-radius: 5px;line-height: 30px;}
 .head-navigation ul li a.btn-pink:hover{background-color: #fff;border: 1px solid #e84b78; color: #e84b78;}
 .head-navigation ul li:hover a{font-weight: 600;color: #e84b78;pointer-events: visible;}
-.head-nav ul li a{float: left;text-align: center;padding: 0 15px;color: #878383;pointer-events: none;font-size: 14px;letter-spacing: 2px;}
+.head-nav ul li a{float: left;text-align: center;padding: 0 15px;color: #878383;font-size: 14px;letter-spacing: 2px;}
 /* .head-nav ul li:hover a{color: #e84b78;} */
-.border-1{border-bottom: 1px solid #cfcccc;width: 50%;}
+.border-1{border-bottom: 1px solid #cfcccc;width: 33%;}
 .head-nav ul{text-align: center;display: flex;justify-content: space-around;}
 .head-title{color: #878383;letter-spacing: 10px;font-size: 12px;text-align: center;padding: 20px;}
 .blog-page {

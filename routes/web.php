@@ -16,6 +16,12 @@
  */
 Route::get('/', ['uses'=>'BlogController@index', 'as'=>'home']);
 Route::get('/blogs', ['uses'=>'BlogController@blogs'])->name('blog.list');
+Route::get('/food', ['uses'=>'BlogController@food'])->name('blog.food');
+Route::get('/life', ['uses'=>'BlogController@life'])->name('blog.life');
+Route::get('/love', ['uses'=>'BlogController@love'])->name('blog.love');
+Route::get('/travel', ['uses'=>'BlogController@travel'])->name('blog.travel');
+Route::get('/wellness', ['uses'=>'BlogController@wellness'])->name('blog.wellness');
+Route::get('/silver-linings', ['uses'=>'BlogController@silverlinings'])->name('blog.silverlinings');
 Route::get('/contact-us', ['uses'=>'BlogController@contactUs'])->name('blog.contactus');
 
 Route::get('/blog/{post}', [
