@@ -1,0 +1,650 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Frog 1.2\n"
+"POT-Creation-Date: 2015-01-05 11:21+0200\n"
+"PO-Revision-Date: 2015-01-05 11:21+0200\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 1.5.7\n"
+"X-Poedit-KeywordsList: _;__;_e\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-SearchPath-0: ..\n"
+
+#: ../frog-wp/comments.php:2
+msgid ""
+"This post is password protected. Enter the password to view any comments."
+msgstr ""
+
+#: ../frog-wp/comments.php:24
+msgid "Comments are closed."
+msgstr ""
+
+#: ../frog-wp/comments.php:41 ../frog-wp/template-contact.php:106
+msgid "Name:"
+msgstr ""
+
+#: ../frog-wp/comments.php:48 ../frog-wp/template-contact.php:111
+msgid "Email:"
+msgstr ""
+
+#: ../frog-wp/comments.php:55
+msgid "Comment:"
+msgstr ""
+
+#: ../frog-wp/comments.php:61
+msgid "Leave a Comment"
+msgstr ""
+
+#: ../frog-wp/comments.php:62
+msgid "Submit Comment"
+msgstr ""
+
+#: ../frog-wp/footer.php:25
+msgid "Random Articles"
+msgstr ""
+
+#: ../frog-wp/footer.php:38 ../frog-wp/index.php:56 ../frog-wp/index.php:104
+#: ../frog-wp/single.php:23 ../frog-wp/single.php:165
+#: ../frog-wp/template-blog1.php:35 ../frog-wp/template-blog1.php:71
+#: ../frog-wp/template-blog2.php:36 ../frog-wp/template-blog2.php:74
+#: ../frog-wp/template-blog3.php:36 ../frog-wp/template-blog3.php:74
+#: ../frog-wp/template-blog3.php:80 ../frog-wp/template-blog4.php:36
+#: ../frog-wp/template-blog4.php:74 ../frog-wp/template-blog4.php:80
+#: ../frog-wp/functions/widgets/widget-cat.php:38
+#: ../frog-wp/functions/widgets/widget-posts.php:36
+#: ../frog-wp/functions/widgets/widget-review-rand.php:36
+#: ../frog-wp/functions/widgets/widget-review-recent.php:36
+#: ../frog-wp/functions/widgets/widget-review.php:36
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:43
+#: ../frog-wp/functions/widgets/widget-top-posts.php:36
+#, php-format
+msgid "View all posts in %s"
+msgstr ""
+
+#: ../frog-wp/functions.php:76
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#: ../frog-wp/functions.php:105
+msgid "Header Navigation"
+msgstr ""
+
+#: ../frog-wp/functions.php:106
+msgid "Categories Navigation"
+msgstr ""
+
+#: ../frog-wp/functions.php:232
+msgid "Article Page Options"
+msgstr ""
+
+#: ../frog-wp/functions.php:242
+msgid "Video Youtube"
+msgstr ""
+
+#: ../frog-wp/functions.php:246
+msgid "Add Youtube code ex: HIrMIeN5ttE"
+msgstr ""
+
+#: ../frog-wp/functions.php:259
+msgid "Video Vimeo"
+msgstr ""
+
+#: ../frog-wp/functions.php:263
+msgid "Add Vimeo code ex: 7449107"
+msgstr ""
+
+#: ../frog-wp/functions.php:274
+msgid "Gallery"
+msgstr ""
+
+#: ../frog-wp/functions.php:277
+msgid "Image with any size!"
+msgstr ""
+
+#: ../frog-wp/functions.php:284
+msgid "Featured Image"
+msgstr ""
+
+#: ../frog-wp/functions.php:286
+msgid "Hide Featured Image on single page for this article"
+msgstr ""
+
+#: ../frog-wp/functions.php:448
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:164
+msgid "Install Required Plugins"
+msgstr ""
+
+#: ../frog-wp/functions.php:449
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:165
+msgid "Install Plugins"
+msgstr ""
+
+#: ../frog-wp/functions.php:450
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:166
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: ../frog-wp/functions.php:451
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: ../frog-wp/functions.php:462
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:180
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:510
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: ../frog-wp/functions.php:463
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:181
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1908
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: ../frog-wp/functions.php:464
+#, php-format
+msgid "All plugins installed and activated successfully. %s"
+msgstr ""
+
+#: ../frog-wp/header.php:46 ../frog-wp/header.php:47 ../frog-wp/header.php:48
+msgid "<strong>Popular tags:</strong>"
+msgstr ""
+
+#: ../frog-wp/index.php:18
+msgid "All posts in:"
+msgstr ""
+
+#: ../frog-wp/index.php:20
+msgid "All posts tagged in:"
+msgstr ""
+
+#: ../frog-wp/index.php:22
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: ../frog-wp/index.php:25 ../frog-wp/index.php:38
+msgid "All posts by:"
+msgstr ""
+
+#: ../frog-wp/index.php:41
+msgid ""
+"Error 404 - Not Found. <br />Sorry, but you are looking for something that "
+"isn't here."
+msgstr ""
+
+#: ../frog-wp/index.php:77 ../frog-wp/index.php:125 ../frog-wp/single.php:34
+#: ../frog-wp/template-blog1.php:92 ../frog-wp/template-blog2.php:95
+#: ../frog-wp/template-blog3.php:89 ../frog-wp/template-blog4.php:89
+#: ../frog-wp/functions/widgets/widget-cat.php:59
+#: ../frog-wp/functions/widgets/widget-posts.php:57
+#: ../frog-wp/functions/widgets/widget-review-rand.php:46
+#: ../frog-wp/functions/widgets/widget-review-recent.php:47
+#: ../frog-wp/functions/widgets/widget-review.php:46
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:53
+#: ../frog-wp/functions/widgets/widget-top-posts.php:46
+msgid "Written by"
+msgstr ""
+
+#: ../frog-wp/index.php:79 ../frog-wp/index.php:139
+#: ../frog-wp/template-blog1.php:106 ../frog-wp/template-blog2.php:97
+msgid "Continue reading"
+msgstr ""
+
+#: ../frog-wp/index.php:84 ../frog-wp/index.php:136 ../frog-wp/single.php:96
+#: ../frog-wp/template-blog1.php:103 ../frog-wp/template-blog2.php:102
+msgid "ago"
+msgstr ""
+
+#: ../frog-wp/index.php:86 ../frog-wp/index.php:138 ../frog-wp/single.php:253
+#: ../frog-wp/template-blog1.php:105 ../frog-wp/template-blog2.php:104
+msgid "Comments"
+msgstr ""
+
+#: ../frog-wp/index.php:86 ../frog-wp/index.php:138
+#: ../frog-wp/template-blog1.php:105 ../frog-wp/template-blog2.php:104
+msgid "Comment"
+msgstr ""
+
+#: ../frog-wp/index.php:155 ../frog-wp/index.php:165
+#: ../frog-wp/template-blog1.php:119 ../frog-wp/template-blog1.php:129
+#: ../frog-wp/template-blog2.php:121 ../frog-wp/template-blog2.php:131
+#: ../frog-wp/template-blog3.php:99 ../frog-wp/template-blog3.php:109
+#: ../frog-wp/template-blog4.php:102 ../frog-wp/template-blog4.php:112
+msgid "Newer Entries"
+msgstr ""
+
+#: ../frog-wp/index.php:156 ../frog-wp/index.php:164
+#: ../frog-wp/template-blog1.php:120 ../frog-wp/template-blog1.php:128
+#: ../frog-wp/template-blog2.php:122 ../frog-wp/template-blog2.php:130
+#: ../frog-wp/template-blog3.php:100 ../frog-wp/template-blog3.php:108
+#: ../frog-wp/template-blog4.php:103 ../frog-wp/template-blog4.php:111
+msgid "Older Entries"
+msgstr ""
+
+#: ../frog-wp/searchform.php:2
+msgid "Live Search ..."
+msgstr ""
+
+#: ../frog-wp/single.php:22
+msgid "Home"
+msgstr ""
+
+#: ../frog-wp/single.php:109
+msgid "<div class=\"entry-btn\">Article Tags:</div>"
+msgstr ""
+
+#: ../frog-wp/single.php:115
+msgid "<div class=\"entry-btn\">Article Categories:</div>"
+msgstr ""
+
+#: ../frog-wp/single.php:135
+msgid "Related Articles"
+msgstr ""
+
+#: ../frog-wp/single.php:211 ../frog-wp/single.php:235
+#: ../frog-wp/functions/widgets/widget-cat.php:75
+#: ../frog-wp/functions/widgets/widget-posts.php:73
+#: ../frog-wp/functions/widgets/widget-review-rand.php:62
+#: ../frog-wp/functions/widgets/widget-review-recent.php:61
+#: ../frog-wp/functions/widgets/widget-review.php:62
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:69
+#: ../frog-wp/functions/widgets/widget-top-posts.php:62
+msgid "by"
+msgstr ""
+
+#: ../frog-wp/template-blog1.php:21 ../frog-wp/template-blog2.php:22
+#: ../frog-wp/template-blog3.php:22 ../frog-wp/template-blog4.php:22
+msgid "Featured Articles"
+msgstr ""
+
+#: ../frog-wp/template-contact.php:95
+msgid "Sorry, an error occured."
+msgstr ""
+
+#: ../frog-wp/template-contact.php:116
+msgid "Subject:"
+msgstr ""
+
+#: ../frog-wp/template-contact.php:121
+msgid "Message:"
+msgstr ""
+
+#: ../frog-wp/template-contact.php:125
+msgid "Submit Message"
+msgstr ""
+
+#: ../frog-wp/template-contact.php:125
+msgid "All Fields are mandatory!"
+msgstr ""
+
+#: ../frog-wp/admin/classes/class.options_machine.php:556
+msgid "Last Backup : "
+msgstr ""
+
+#: ../frog-wp/admin/front-end/options.php:43
+#: ../frog-wp/admin/front-end/options.php:67
+msgid "Save All Changes"
+msgstr ""
+
+#: ../frog-wp/admin/front-end/options.php:68
+msgid "Options Reset"
+msgstr ""
+
+#: ../frog-wp/functions/widgets.php:6
+msgid "Home Sidebar (Left Middle)"
+msgstr ""
+
+#: ../frog-wp/functions/widgets.php:15
+msgid "Default Sidebar (Right)"
+msgstr ""
+
+#: ../frog-wp/functions/widgets.php:24
+msgid "Footer Sidebar 1"
+msgstr ""
+
+#: ../frog-wp/functions/widgets.php:33
+msgid "Footer Sidebar 2"
+msgstr ""
+
+#: ../frog-wp/functions/widgets.php:42
+msgid "Footer Sidebar 3"
+msgstr ""
+
+#: ../frog-wp/functions/widgets.php:51
+msgid "Footer Sidebar 4"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:167
+msgid "Something went wrong."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:182
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:537
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2120
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:565
+#, php-format
+msgid "The following plugin was activated successfully: %s."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:738
+msgid "Dismiss this notice"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1125
+msgid "External Link"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1130
+msgid "Private Repository"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1133
+msgid "Pre-Packaged"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1137
+msgid "WordPress Repository"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1140
+msgid "Required"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1140
+msgid "Recommended"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1143
+msgid "Not Installed"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1145
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1147
+msgid "Not Updated"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1149
+msgid "Active"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1343
+#, php-format
+msgid ""
+"No plugins to install or activate. <a href=\"%1$s\" title=\"Return to the "
+"Dashboard\">Return to the Dashboard</a>"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1359
+msgid "Plugin"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1360
+msgid "Source"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1361
+msgid "Type"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1362
+msgid "Status"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1380
+msgid "Install"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1381
+msgid "Activate"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1891
+msgid "Install package not available."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1892
+#, php-format
+msgid "Downloading install package from <span class=\"code\">%s</span>&#8230;"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1893
+msgid "Unpacking the package&#8230;"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1894
+msgid "Installing the plugin&#8230;"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1895
+msgid "Plugin install failed."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1896
+msgid "Plugin installed successfully."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:1907
+msgid "Plugin activation failed."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2017
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2018
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2018
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2027
+msgid "Show Details"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2018
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2027
+msgid "Hide Details"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2019
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2020
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2024
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2025
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2026
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2027
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2028
+msgid "All installations have been completed."
+msgstr ""
+
+#: ../frog-wp/functions/custom/class-tgm-plugin-activation.php:2029
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: ../frog-wp/functions/custom/comments.php:21
+msgid "Your comment is awaiting moderation."
+msgstr ""
+
+#: ../frog-wp/functions/custom/comments.php:32
+msgid "Pingback:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-banner.php:11
+msgid "Advertisement - Paste your HTML or JavaScript code."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-banner.php:12
+msgid "Custom: Advertisement 300px"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-banner.php:43
+msgid "Paste your HTML or JavaScript code here:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-cat.php:11
+msgid "Posts by Categories"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-cat.php:12
+msgid "Custom: Posts by Categories"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-cat.php:103
+#: ../frog-wp/functions/widgets/widget-categories.php:44
+#: ../frog-wp/functions/widgets/widget-posts.php:100
+#: ../frog-wp/functions/widgets/widget-review-rand.php:89
+#: ../frog-wp/functions/widgets/widget-review-recent.php:88
+#: ../frog-wp/functions/widgets/widget-review.php:89
+#: ../frog-wp/functions/widgets/widget-tags.php:47
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:96
+#: ../frog-wp/functions/widgets/widget-top-posts.php:89
+msgid "Title:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-cat.php:108
+#: ../frog-wp/functions/widgets/widget-posts.php:105
+#: ../frog-wp/functions/widgets/widget-review-rand.php:94
+#: ../frog-wp/functions/widgets/widget-review-recent.php:93
+#: ../frog-wp/functions/widgets/widget-review.php:94
+#: ../frog-wp/functions/widgets/widget-tags.php:53
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:101
+#: ../frog-wp/functions/widgets/widget-top-posts.php:94
+msgid "Number of Posts:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-cat.php:113
+msgid "Category:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-categories.php:11
+msgid "Display Categories in 2 columns."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-categories.php:12
+msgid "Custom: Categories"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:12
+msgid "Feedburner subscribe widget."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:13
+msgid "Custom: Feedburner Subscribe"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:29
+msgid "Enter your e-mail address"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:31
+msgid "Subscribe"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:60
+msgid "Widget Title:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:65
+msgid "Feedburner ID:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-feedburner.php:70
+msgid "Description:"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-posts.php:11
+msgid "Your site's most recent Posts."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-posts.php:12
+msgid "Custom: Recent Posts"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-review-rand.php:11
+msgid "Your site's Random Reviews."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-review-rand.php:12
+msgid "Custom: Random Reviews"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-review-recent.php:11
+msgid "Your site's Recent Reviews."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-review-recent.php:12
+msgid "Custom: Recent Reviews"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-review.php:11
+msgid "Your site's Best Reviews."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-review.php:12
+msgid "Custom: Best Reviews"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-tags.php:11
+msgid "Display your most used Tags."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-tags.php:12
+msgid "Custom: Most used Tags"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:11
+msgid "Top posts in last 30 days by comments."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-top-posts-30days.php:12
+msgid "Custom: Top Articles in last 30 days"
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-top-posts.php:11
+msgid "Popular Posts - Display your Popular / Top Posts by comments."
+msgstr ""
+
+#: ../frog-wp/functions/widgets/widget-top-posts.php:12
+msgid "Custom: Popular Posts"
+msgstr ""

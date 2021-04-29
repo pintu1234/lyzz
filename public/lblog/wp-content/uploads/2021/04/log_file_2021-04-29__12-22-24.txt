@@ -1,0 +1,153 @@
+
+---Downloaded files---
+The import files for: Main Demo were successfully downloaded!
+Initial max execution time = 30
+Files info:
+Site URL = http://127.0.0.1:8000/lblog
+Data file = /var/www/html/lyzz/public/lblog/wp-content/themes/frog-wp//functions/demo/frog-content.xml
+Widget file = /var/www/html/lyzz/public/lblog/wp-content/themes/frog-wp//functions/demo/frog-widgets.wie
+Customizer file = not defined!
+Redux files:
+not defined!
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+------
+New AJAX call!
+
+
+---Importing widgets---
+cs-1 : Sidebar does not exist in theme (moving widget to Inactive)
+
+socialcountplus - Social - Site does not support widget
+Search - Search - Imported to Inactive
+Custom: Categories - No Title - Imported to Inactive
+Custom: Recent Posts - Recent Posts - Imported to Inactive
+
+cs-2 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom: Advertisement 300px - No Title - Imported to Inactive
+Custom: Feedburner Subscribe - Feedburner - Imported to Inactive
+Text - Custom Sidebars - Imported to Inactive
+Search - Search - Imported to Inactive
+Custom: Categories - No Title - Imported to Inactive
+Custom: Recent Posts - Recent Posts - Imported to Inactive
+
+cs-3 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom: Advertisement 300px - No Title - Imported to Inactive
+Custom: Feedburner Subscribe - Feedburner - Imported to Inactive
+Text - Custom Sidebars - Imported to Inactive
+Custom: Recent Posts - Recent Posts - Imported to Inactive
+
+cs-4 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Text - Custom Sidebars - Imported to Inactive
+Custom: Recent Posts - Recent Posts - Imported to Inactive
+
+cs-5 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom: Feedburner Subscribe - Feedburner - Imported to Inactive
+Text - Custom Sidebars - Imported to Inactive
+Custom: Popular Posts - Popular Posts - Imported to Inactive
+Archives - Archives - Imported to Inactive
+
+cs-6 : Sidebar does not exist in theme (moving widget to Inactive)
+
+Custom: Advertisement 300px - No Title - Imported to Inactive
+socialcountplus - Social Count - Site does not support widget
+Custom: Categories - No Title - Imported to Inactive
+Text - Custom Sidebars - Imported to Inactive
+Custom: Best Reviews - Best Reviews - Imported to Inactive
+
+Home Sidebar (Left Middle) : 
+
+Custom: Feedburner Subscribe - Feedburner - Imported
+Custom: Best Reviews - Best Reviews - Imported
+Custom: Advertisement 300px - No Title - Imported
+Calendar - Calendar - Imported
+Archives - Archives - Imported
+Text - Advertisement - Imported
+Custom: Recent Reviews - Recent Reviews - Imported
+
+Default Sidebar (Right) : 
+
+socialcountplus - Social Widget - Site does not support widget
+Search - Live Search - Imported
+Custom: Advertisement 300px - No Title - Imported
+Custom: Categories - No Title - Imported
+Custom: Popular Posts - Popular Posts - Imported
+Custom: Posts by Categories - Posts from Themes - Imported
+Custom: Most used Tags - No Title - Imported
+Text - Advertisement - Imported
+
+Footer Sidebar 1 : 
+
+Custom: Recent Posts - Recent Posts - Imported
+
+Footer Sidebar 2 : 
+
+Custom: Feedburner Subscribe - Feedburner - Imported
+Custom: Most used Tags - No Title - Imported
+
+Footer Sidebar 3 : 
+
+Calendar - Calendar - Imported
+Search - Search - Imported
+
+Footer Sidebar 4 : 
+
+Custom: Recent Reviews - Recent Reviews - Imported
+Meta - Meta - Imported
+
+

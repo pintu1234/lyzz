@@ -1,0 +1,825 @@
+  /*
+	---------------------------------------------------
+	
+	       The Frog - Styles for Mobile Devices
+
+	---------------------------------------------------
+*/
+
+/* 1350px (devices and browsers) */
+@media only screen and (min-width: 1260px) and (max-width: 1300px) { 
+/*-----------------------------------------------------------------------------
+----------------------------- 1 - Layout --------------------------------------
+-----------------------------------------------------------------------------*/
+.main-header               { width: 1230px; }
+.wrap-center               { width: 1230px; }
+/* - Layout content - */
+.wrap-fullwidth            { width: 1230px; }
+.wrap-fullwidth-bg         { width: 1230px; }
+/* .page-content */
+.home-content              { width: 570px; float: left; margin-right: 30px;}
+.wrap-content              { width: 900px; float: left; }
+.single-content            { width: 900px; float: left; padding: 0 0 25px 0;}          
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 2 - Header --------------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Popular Words -- */
+#tags1, #tags3             { display: none;}
+#tags2                     { display: block;}
+
+/* -- Sticky Header -- */
+header .sticky .sticky-on  { width: 1230px;}
+
+    
+/*-----------------------------------------------------------------------------
+----------------------------- 3 - Home Content --------------------------------
+-----------------------------------------------------------------------------*/
+ 
+/* ##### Featured Slider home ##### 
+################################## */
+.featured-title            { margin-bottom: -150px; position: relative; z-index: 101;}
+.featured-articles         { width: 1230px; }
+
+
+/* ##### Blog big thumbnails ##### 
+################################## */
+.blog-ex1 .ex1-content      { padding: 30px 30px 25px 30px;}
+.blog-ex1 h2                { font-size: 20px; line-height: 28px; }
+.blog-ex1 .home-data .thumbs-rating-container .thumbs-rating-up, 
+.blog-ex1 .home-data .thumbs-rating-container .thumbs-rating-down { font-size: 18px; } 
+
+/* ##### Blog small thumbnails ##### 
+#################################### */
+.blog-ex2                   { width: 570px; }
+/* - Title & author - */
+.blog-ex2 .an-home-title    { width: 315px; }
+
+/* ###### Blog Masonry style ###### 
+#################################### */
+ul.masonry_list            { width: 925px; }
+ul.masonry_list li         { width: 230px; }
+
+/*-----------------------------------------------------------------------------
+----------------------------- 4 - Entry Content -------------------------------
+-----------------------------------------------------------------------------*/
+ 
+/* - Top entry - */
+.single-box                { width: 900px; height: 150px; float: left; background-color: #f1f1f1; }
+
+/* -- Responsive Images -- */
+.alignleft                { margin: 20px 20px 10px -40px; }
+.alignright               { margin: 20px -40px 10px 20px; }
+
+/*-----------------------------------------------------------------------------
+------------------------------ 9 - Footer -------------------------------------
+-----------------------------------------------------------------------------*/
+.wrap-footer              { width: 1230px; }
+/* -- FeedBurner -- */
+footer #newsletter-form input.newsletter-btn  { width:101%;}
+}
+
+
+
+
+
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 1004px) and (max-width: 1230px) {
+/*-----------------------------------------------------------------------------
+----------------------------- 1 - Layout --------------------------------------
+-----------------------------------------------------------------------------*/
+/* - Header - */
+.main-header               { width: 980px; }
+.wrap-center               { width: 980px; }
+/* - Layout content - */
+.wrap-fullwidth            { width: 980px; }
+.wrap-fullwidth-bg         { width: 980px; }
+.wrap-fullwidth-bg .entry  { width: auto; padding-left: 115px; padding-right: 115px;}
+/* .page-content */
+.home-content              { width: 650px; /*+30px*/ float: left; }
+.wrap-content              { width: 980px; float: left; }
+.single-content            { width: 950px; float: none; margin-left: auto; margin-right: auto;}           
+.sidebar-middle            { }
+/* - sidebar - */
+.sidebar           { width: 980px; float: left; margin-left: 20px; margin-top: 30px;}
+.sidebar .widget   { width: 250px; display: block; float: left; margin-right: 20px;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 2 - Header --------------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Popular Words -- */
+#tags1, #tags2             { display: none;}
+#tags3                     { display: block;}
+
+/* -- Sticky Header -- */
+header .sticky                     { position: relative; z-index: 0 !important;} 
+header .sticky .sticky-on          { width: auto; height: auto;}
+header .sticky.main-header         { height: auto;}
+header .sticky .logo               { height: auto; }
+header .sticky .jquerycssmenu      { margin-top: 24;}
+header .sticky #searchform2        { margin-top: 27px;}
+
+/* -- Search -- */
+header #searchform2        { display: none; }
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 3 - Home Content --------------------------------
+-----------------------------------------------------------------------------*/
+/* ##### Featured Slider home ##### 
+################################## */
+.featured-title            { margin-bottom: -150px; position: relative; z-index: 101;}
+.featured-articles         { width: 980px; }
+.featured-articles-slider, .random-articles-slider  { width: 800px; }
+
+/* ##### Blog big thumbnails ##### 
+################################## */
+.blog-ex1                   { width: 650px; }
+
+/* ##### Blog small thumbnails ##### 
+#################################### */
+.blog-ex2                   { width: 650px;}
+
+/* ###### Blog Masonry style ###### 
+#################################### */
+ul.masonry_list             { width: 1005px; float: left; }
+ul.masonry_list li          { width: 250px; padding: 25px 30px 20px 30px;} 
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 4 - Entry Content -------------------------------
+-----------------------------------------------------------------------------*/
+.entry h1.page-title        { padding-top: 30px; }
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 10 - Footer -------------------------------------
+-----------------------------------------------------------------------------*/
+.wrap-footer                  { width: 980px;}
+/* -- widgets -- */
+footer .widget                { width: auto; padding: 0 25px 20px 25px; margin-bottom: 30px;}
+/* -- Article widget -- */
+footer ul.article_list { width: auto;}  
+footer ul.article_list li img.attachment-thumbnail-widget { width: 100%;}
+/* -- FeedBurner -- */
+footer #newsletter-form input.newsletter-btn  { width:101%;}
+/* -- Calendar -- */ 
+footer #wp-calendar tbody td { padding: 1px 3px;}
+/* -- Meta in two columns -- */
+footer .widget_meta ul { width: auto; }
+footer .widget_meta li { width: auto; }
+/* -- Meta in two columns -- */
+footer .widget_archive ul { width: auto; }
+footer .widget_archive li { width: auto; }
+/* -- Meta in two columns -- */
+footer .widget_anthemes_categories ul { width: auto; }
+footer .widget_anthemes_categories li { width: auto; }
+/* -- Default Search -- */
+footer div.widget_search #searchform2 #s { width: 100px;}
+footer div.widget_search #searchform2 #s:focus { width: 100px;} 
+
+}
+
+
+
+
+
+/* Tablet Portrait size to standard 960 (devices and browsers) */
+@media only screen and (min-width: 760px) and (max-width: 1000px) {
+/*-----------------------------------------------------------------------------
+----------------------------- 1 - Layout --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* - Header - */
+.main-header               { width: 750px; }
+.wrap-center               { width: 750px; }
+.top-navigation            { display: none;}
+/* - Layout content - */
+.wrap-fullwidth            { width: 750px; }
+.wrap-fullwidth-bg         { width: 750px; }
+.wrap-fullwidth-bg .entry  { width: auto; padding-left: 15px; padding-right: 15px;}
+/* .page-content */
+.home-content              { width: 750px; /*+30px*/ float: left; }
+.wrap-content              { width: 750px; float: left; }
+.single-content            { width: 750px; float: none; margin-left: auto; margin-right: auto;}           
+/* - sidebar - */
+.sidebar           		   { width: 750px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar .widget           { width: 250px; display: block; float: left; margin-right: 30px;}
+/* - sidebar middle - */
+.sidebar-middle            { width: 750px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar-middle .widget    { width: 250px; display: block; float: left; margin-right: 30px;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 2 - Header --------------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Logo -- */
+.logo                      { margin: 24px 0 0 0; }
+/* -- Popular Words -- */
+.popular-words             { display: none;}
+ 
+/* -- Search -- */
+header #searchform2        { float: left; margin-left: 160px;}
+header #s                  { width: 170px; }
+header #s:focus            { width: 170px; } 
+
+/* -- Top Header Menu --
+##################### */
+.jquerycssmenu             { display: none;}
+.menu-categories .jquerycssmenu { display: block;}
+
+/* -- Sticky Header -- */
+header .sticky                     { position: relative; z-index: 0 !important;} 
+header .sticky .sticky-on          { width: auto; }
+header .sticky.main-header         { height: auto;}
+header .sticky .logo               { height: auto; }
+header .sticky .jquerycssmenu      { margin-top: 12px;}
+header .sticky #searchform2        { margin-top: 27px;}
+
+/* -- Responsive menu -- */
+#click-menu                 { top: 28px !important;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 3 - Home Content --------------------------------
+-----------------------------------------------------------------------------*/
+
+/* ##### Featured Slider home ##### 
+################################## */
+.featured-title            { margin-bottom: -150px; position: relative; z-index: 101;}
+.featured-articles         { width: 750px; }
+.featured-articles-slider, .random-articles-slider  { width: 570px; }
+
+/* ##### Blog big thumbnails ##### 
+################################## */
+.blog-ex1                   { width: 750px; }
+
+/* ##### Blog small thumbnails ##### 
+#################################### */
+.blog-ex2                   { width: 750px;}
+
+/* ###### Blog Masonry style ###### 
+#################################### */
+ul.masonry_list             { width: 775px; float: left; }
+ul.masonry_list li          { width: 210px; padding: 10px 10px 10px 10px;}
+ul.masonry_list li img      { width: 100%;}
+
+/* -- infinite scroll Pagination -- */
+#infscr-loading  img       { display: none !important;}
+
+/*----------------------------------------------------------------------------
+----------------------------- 4 - Entry Content -------------------------------
+-----------------------------------------------------------------------------*/ 
+/* -- Responsive Images -- */
+.alignleft                 { margin-left: 0px;}
+.alignright                { margin-right: 0px;} 
+
+.entry h1.page-title        { padding-top: 30px; }
+
+/* - Top entry - */
+.single-box                { width: 750px; }
+
+/* -- Prev and Next articles --*/
+.prev-articles             { display: none !important;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 9 - Footer -------------------------------------
+-----------------------------------------------------------------------------*/
+.wrap-footer                  { width: 750px;}
+/* -- widgets -- */
+footer .widget                { display: none;}
+/* -- Copyright -- */
+.copyright                    { width: 750px; margin-top: -30px; }
+}
+
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 580px) and (max-width: 760px) {
+/*-----------------------------------------------------------------------------
+----------------------------- 1 - Layout --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* - Header - */
+.main-header               { width: 570px; }
+.wrap-center               { width: 570px; }
+.top-navigation            { display: none;}
+.bar-header                { display: none;}
+/* - Layout content - */
+.wrap-fullwidth            { width: 570px; }
+.wrap-fullwidth-bg         { width: 570px; }
+.wrap-fullwidth-bg .entry  { width: auto; padding-left: 15px; padding-right: 15px;}
+/* .page-content */
+.home-content              { width: 570px; /*+30px*/ float: left; }
+.wrap-content              { width: 570px; float: left; }
+.single-content            { width: 570px; float: none; margin-left: auto; margin-right: auto;}           
+/* - sidebar - */
+.sidebar           		   { width: 600px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar .widget           { width: 250px; padding: 0 15px 20px 15px; display: block; float: left; margin-right: 10px;}
+/* - sidebar middle - */
+.sidebar-middle            { width: 600px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar-middle .widget    { width: 250px; padding: 0 15px 20px 15px; display: block; float: left; margin-right: 10px;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 2 - Header --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* -- Logo -- */
+.logo                      { }
+/* -- Popular Words -- */
+.popular-words             { display: none;}
+ 
+/* -- Search -- */
+header #searchform2        { float: right; margin-right: 80px;}
+header #s                  { width: 170px; }
+header #s:focus            { width: 170px; } 
+
+/* -- Top Header Menu --
+##################### */
+.jquerycssmenu             { display: none;}
+.menu-categories .jquerycssmenu { display: none;}
+
+/* -- Sticky Header -- */
+header .sticky                     { position: relative; z-index: 0 !important;} 
+header .sticky .sticky-on          { width: auto; }
+header .sticky.main-header         { height: auto;}
+header .sticky .logo               { height: auto; margin-top: 10px !important; }
+header .sticky .jquerycssmenu      { margin-top: 12px;}
+header .sticky #searchform2        { margin-top: 27px;}
+
+/* -- Responsive menu -- */
+#click-menu                 { top: 28px !important;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 3 - Home Content --------------------------------
+-----------------------------------------------------------------------------*/
+
+/* ##### Featured Slider home ##### 
+################################## */
+.featured-title            { margin-bottom: -150px; position: relative; z-index: 101;}
+.featured-articles         { width: 570px; }
+.featured-articles-slider, .random-articles-slider  { width: 390px; }
+
+/* ##### Blog big thumbnails ##### 
+################################## */
+.blog-ex1                   { width: 570px; }
+/* - Title & author - */
+.blog-ex1 .an-home-title    { width: 300px; }
+
+/* ##### Blog small thumbnails ##### 
+#################################### */
+.blog-ex2                   { width: 570px;}
+/* - Title & author - */
+.blog-ex2 .an-home-title    { width: 300px; }
+
+/* ###### Blog Masonry style ###### 
+#################################### */
+ul.masonry_list             { width: 595px; float: left; }
+ul.masonry_list li          { width: 220px; padding: 25px 25px 20px 25px;}
+ul.masonry_list li img      { width: 100%;}
+
+/* -- infinite scroll Pagination -- */
+#infscr-loading  img        { display: none !important;}
+
+/*----------------------------------------------------------------------------
+----------------------------- 4 - Entry Content -------------------------------
+-----------------------------------------------------------------------------*/
+/* ##### Related articles single ##### 
+################################## */
+.related-title             { margin-bottom: -150px; position: relative; z-index: 101;}
+.related-articles          { width: 570px; }
+.related-articles-slider   { width: 390px; }
+
+/* -- Responsive Images -- */
+.alignleft                 { margin-left: 0px;}
+.alignright                { margin-right: 0px;} 
+
+.entry h1.page-title       { padding-top: 30px; }
+
+/* - Top entry - */
+.single-box                { width: 570px; height: auto; }
+.single-box .single-money  { width: 100%; height: auto; margin: 15px auto 10px auto;}
+.single-box .single-money img { max-width: 100%; height: auto;}
+.single-box .single-money iframe { max-width: 100%; height: auto;}
+.single-box .single-money script { max-width: 100%; height: auto;}
+.single-breadcrumbs        { height: auto;}
+.entry-top                 { width: 550px;}
+.single-gallery            { width: 550px;}
+iframe.single_iframe       { width: 100%; height: 350px;}
+
+/* -- Entry content style -- */
+.entry                     { width: 540px; }
+
+/* -- Prev and Next articles --*/
+.prev-articles             { display: none !important;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 6 - Comments Form -------------------------------
+-----------------------------------------------------------------------------*/
+ul.comment                  { width: 540px; }
+.comments                   { width: 540px; }
+/* -- Entry bottom -- */
+.entry-bottom               { width: 540px; height: auto; margin: 20px 0 10px 15px;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 7 - Contact Form --------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Contact Form -- */
+#contactform #contactName, #contactform #emaill, #contactform #subject { width:96%; }	
+#contactform #subject         { width: 98%;}
+#contactform textarea         { width: 98%; } 
+
+/*-----------------------------------------------------------------------------
+----------------------------- 8 - Custom Pages --------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Tag & Category Index -- */
+#mcTagMap .holdleft, #sc_mcTagMap .holdleft { width: 160px !important; }
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 9 - Footer -------------------------------------
+-----------------------------------------------------------------------------*/
+.wrap-footer                  { width: 570px;}
+/* -- widgets -- */
+footer .widget                { display: none;}
+/* -- Copyright -- */
+.copyright                    { width: 570px; margin-top: -30px; }
+
+/* -- Footer Social Icons -- */
+ul.footer-social li           { margin: 27px 5px 0 5px; }
+ul.footer-social li a         { text-align: center; padding: 5px 5px; } 
+}
+
+
+
+
+
+
+/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
+@media only screen and (min-width: 480px) and (max-width: 580px) {
+/*-----------------------------------------------------------------------------
+----------------------------- 1 - Layout --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* - Header - */
+.main-header               { width: 460px; }
+.wrap-center               { width: 460px; }
+.top-navigation            { display: none;}
+.bar-header                { display: none;}
+/* - Layout content - */
+.wrap-fullwidth            { width: 460px; }
+.wrap-fullwidth-bg         { width: 460px; }
+.wrap-fullwidth-bg .entry  { width: auto; padding-left: 15px; padding-right: 15px;}
+/* .page-content */
+.home-content              { width: 460px; /*+30px*/ float: left; }
+.wrap-content              { width: 460px; float: left; }
+.single-content            { width: 460px; float: none; margin-left: auto; margin-right: auto;}           
+/* - sidebar - */
+.sidebar           		   { width: 460px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar .widget           { width: 250px; display: block; float: left; margin-right: 0px;}
+/* - sidebar middle - */
+.sidebar-middle            { width: 460px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar-middle .widget    { width: 250px; display: block; float: left; margin-right: 0px;}
+.sidebar .widget, .sidebar-middle .widget { padding: 0 105px 20px 105px; }
+
+/*-----------------------------------------------------------------------------
+----------------------------- 2 - Header --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* -- Logo -- */
+.logo                      { }
+/* -- Popular Words -- */
+.popular-words             { display: none;}
+ 
+/* -- Search -- */
+header #searchform2        { display: none;} 
+
+/* -- Top Header Menu --
+##################### */
+.jquerycssmenu             { display: none;}
+.menu-categories .jquerycssmenu { display: none;}
+
+/* -- Sticky Header -- */
+header .sticky                     { position: relative; z-index: 0 !important;} 
+header .sticky .sticky-on          { width: auto; }
+header .sticky.main-header         { height: auto;}
+header .sticky .logo               { height: auto; margin-top: 10px !important; }
+header .sticky .jquerycssmenu      { margin-top: 12px;}
+header .sticky #searchform2        { margin-top: 27px;}
+
+/* -- Responsive menu -- */
+#click-menu                 { top: 28px !important;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 3 - Home Content --------------------------------
+-----------------------------------------------------------------------------*/
+
+/* ##### Featured Slider home ##### 
+################################## */
+.featured-title            { margin-bottom: -150px; position: relative; z-index: 101;}
+.featured-articles         { width: 460px; }
+.featured-articles-slider, .random-articles-slider  { width: 390px; }
+
+/* ##### Blog big thumbnails ##### 
+################################## */
+.blog-ex1                   { width: 460px; }
+.blog-ex1 .ex1-content      { padding: 30px 20px 25px 20px; }
+/* - Title & author - */
+.blog-ex1 .an-home-title    { width: 280px; }
+
+/* ##### Blog small thumbnails ##### 
+#################################### */
+.blog-ex2                   { width: 460px;}
+/* - Title & author - */
+.blog-ex2 .an-home-title    { width: 198px; }
+
+/* ###### Blog Masonry style ###### 
+#################################### */
+ul.masonry_list             { width: 485px; float: left; }
+ul.masonry_list li          { width: 185px; padding: 15px 15px 10px 15px;}
+ul.masonry_list li img      { width: 100%;}
+
+/* -- infinite scroll Pagination -- */
+#infscr-loading  img       { display: none !important;}
+
+/*----------------------------------------------------------------------------
+----------------------------- 4 - Entry Content -------------------------------
+-----------------------------------------------------------------------------*/ 
+
+/* ##### Related articles single ##### 
+################################## */
+.related-title             { margin-bottom: -150px; position: relative; z-index: 101;}
+.related-articles          { width: 460px; }
+.related-articles-slider   { width: 280px; }
+
+/* -- Responsive Images -- */
+.alignleft                 { margin-left: 0px;}
+.alignright                { margin-right: 0px;} 
+
+.entry h1.page-title       { padding-top: 30px; }
+
+/* - Top entry - */
+.single-box                { width: 460px; height: auto; }
+.single-box .single-money  { width: 100%; height: auto; margin: 15px auto 10px auto;}
+.single-box .single-money img { max-width: 100%; height: auto;}
+.single-box .single-money iframe { max-width: 100%; height: auto;}
+.single-box .single-money script { max-width: 100%; height: auto;}
+.single-breadcrumbs        { display: none;}
+.entry-top                 { width: 430px;}
+.single-gallery            { width: 430px;}
+iframe.single_iframe       { width: 100%; height: 280px;}
+.single-gallery img        { width: 143px; height: 143px;}
+
+/* -- Entry content style -- */
+.entry                     { width: 430px; }
+
+/* -- Prev and Next articles --*/
+.prev-articles             { display: none !important;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 6 - Comments Form -------------------------------
+-----------------------------------------------------------------------------*/
+ul.comment                  { width: 430px; }
+.comments                   { width: 430px; }
+/* -- Entry bottom -- */
+.entry-bottom               { width: 430px; height: auto; margin: 20px 0 10px 15px;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 7 - Contact Form --------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Contact Form -- */
+#contactform #contactName, #contactform #emaill, #contactform #subject { width:96%; }	
+#contactform #subject         { width: 98%;}
+#contactform textarea         { width: 98%; } 
+
+/*-----------------------------------------------------------------------------
+----------------------------- 8 - Custom Pages --------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Tag & Category Index -- */
+#mcTagMap .holdleft, #sc_mcTagMap .holdleft { width: 195px !important; }
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 9 - Footer -------------------------------------
+-----------------------------------------------------------------------------*/
+.wrap-footer                  { width: 460px;}
+/* -- widgets -- */
+footer .widget                { display: none;}
+/* -- Copyright -- */
+.copyright                    { width: 460px; margin-top: -30px; }
+/* -- Footer Social Icons -- */
+ul.footer-social li           { margin: 27px 5px 0 5px; }
+ul.footer-social li a         { text-align: center; padding: 5px 4px; } 
+}
+
+
+
+
+
+
+
+
+
+/* All Mobile Size (devices) */
+@media only screen and (max-width: 479px) { 
+/*-----------------------------------------------------------------------------
+----------------------------- 1 - Layout --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* - Header - */
+.main-header               { width: 305px; }
+.wrap-center               { width: 305px; }
+.top-navigation            { display: none;}
+.bar-header                { display: none;}
+/* - Layout content - */
+.wrap-fullwidth            { width: 305px; }
+.wrap-fullwidth-bg         { width: 305px; }
+.wrap-fullwidth-bg .entry  { width: auto; padding-left: 15px; padding-right: 15px;}
+/* .page-content */
+.home-content              { width: 305px; /*+30px*/ float: left; }
+.wrap-content              { width: 305px; float: left; }
+.single-content            { width: 305px; float: none; margin-left: auto; margin-right: auto;}           
+/* - sidebar - */
+.sidebar           		   { width: 300px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar .widget           { width: 250px; display: block; float: left; margin-right: 0px;}
+/* - sidebar middle - */
+.sidebar-middle            { width: 300px; float: left;  margin-top: 30px; margin-left: 0px;}
+.sidebar-middle .widget    { width: 250px; display: block; float: left; margin-right: 0px;}
+.sidebar .widget, .sidebar-middle .widget { padding: 0 27px 20px 27px; }
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 2 - Header --------------------------------------
+-----------------------------------------------------------------------------*/
+
+/* -- Logo -- */
+.logo                      { }
+/* -- Popular Words -- */
+.popular-words             { display: none;}
+ 
+/* -- Search -- */
+header #searchform2        { display: none;} 
+
+/* -- Top Header Menu --
+##################### */
+.jquerycssmenu             { display: none;}
+.menu-categories .jquerycssmenu { display: none;}
+
+/* -- Sticky Header -- */
+header .sticky                     { position: relative; z-index: 0 !important;} 
+header .sticky .sticky-on          { width: auto; }
+header .sticky.main-header         { height: auto;}
+header .sticky .logo               { height: auto; margin-top: 10px !important; }
+header .sticky .jquerycssmenu      { margin-top: 12px;}
+header .sticky #searchform2        { margin-top: 27px;}
+
+/* -- Responsive menu -- */
+#click-menu                 { top: 28px !important;}
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 3 - Home Content --------------------------------
+-----------------------------------------------------------------------------*/
+
+/* ##### Featured Slider home ##### 
+################################## */
+.featured-title            { margin-bottom: -150px; position: relative; z-index: 101; width: 30px; height: 150px; float: right; padding-left: 10px; }
+.featured-title h3         { display: none; }
+.featured-articles         { width: 305px; }
+.featured-articles-slider, .random-articles-slider  { width: 275px; }
+.slide-nav                 { float: left; margin-top: 55px; margin-left: 0px; }
+
+/* ##### Blog big thumbnails ##### 
+################################## */
+.blog-ex1                   { width: 305px; }
+.blog-ex1 .ex1-content      { padding: 30px 20px 25px 20px; }
+/* - Title & author - */
+.blog-ex1 .an-home-title    { width: 280px; }
+/* - Like & unlike - */
+.blog-ex1 .home-data        { float: left; margin-left: 70px; }
+.blog-ex1 .an-read-more     { display: none;}
+
+/* ##### Blog small thumbnails ##### 
+#################################### */
+.blog-ex2                   { width: 305px;}
+.blog-ex2 .ex2-content      { padding: 30px 15px 25px 15px; margin-top: -6px; }
+.blog-ex2 h2                { font-size: 18px; line-height: 24px; }
+/* - Title & author - */
+.blog-ex2 .an-home-title    { width: 175px; }
+.blog-ex2 img.thumbnail_image { width: 80px; height: 80px; margin-right: 15px; }
+.blog-ex2 .article-category { display: none;}
+.blog-ex2 .an-display-comm  { display: none;}
+/* - Like & unlike - */
+.blog-ex2 .home-data        { margin-top: -20px;}
+
+/* ###### Blog Masonry style ###### 
+#################################### */
+ul.masonry_list             { width: 330px; float: left; }
+ul.masonry_list li          { width: 255px; padding: 15px 25px 10px 25px;}
+ul.masonry_list li img      { width: 100%;}
+
+/* -- infinite scroll Pagination -- */
+#infscr-loading  img       { display: none !important;}
+
+/*----------------------------------------------------------------------------
+----------------------------- 4 - Entry Content -------------------------------
+-----------------------------------------------------------------------------*/ 
+
+/* ##### Related articles single ##### 
+################################## */
+.related-title            { margin-bottom: -150px; position: relative; z-index: 101; width: 30px; height: 150px; float: right; padding-left: 10px; }
+.related-title h3         { display: none; }
+.related-articles         { width: 305px; }
+.related-articles-slider  { width: 275px; }
+
+/* -- Responsive Images -- */
+.alignleft                 { margin-left: 0px;}
+.alignright                { margin-right: 0px;} 
+h1.article-title           { font-size: 26px; font-weight: 600; line-height: 34px; }
+.entry h1.page-title       { font-size: 26px; padding-top: 30px; }
+
+/* - Top entry - */
+.single-box                { width: 305px; height: auto; }
+.single-box .single-money  { width: 100%; height: auto; margin: 15px auto 10px auto;}
+.single-box .single-money img { max-width: 100%; height: auto;}
+.single-box .single-money iframe { max-width: 100%; height: auto;}
+.single-box .single-money script { max-width: 100%; height: auto;}
+.single-breadcrumbs        { display: none;}
+.entry-top                 { width: 290px;}
+.single-gallery            { width: 290px;}
+iframe.single_iframe       { width: 100%; height: 180px;}
+.single-gallery img        { width: 145px; height: 145px;}
+
+/* -- Entry content style -- */
+.entry                     { width: 280px; }
+
+/* -- About author -- */
+.author-meta               { width: 100%;  }
+.author-meta img.avatar    { width: 60px; height: 60px; }
+.author-info               { width: auto; height: auto; margin: 0px 0 -15px 70px; }
+.author-meta .entry        { padding: 0 10px !important;}
+
+/* -- Author -- */
+.author-right-meta         { float: left; margin-left: 0px;}
+
+/* -- Prev and Next articles --*/
+.prev-articles             { display: none !important;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 6 - Comments Form -------------------------------
+-----------------------------------------------------------------------------*/
+ul.comment                  { width: 285px; }
+.comments                   { width: 285px; }
+/* -- Entry bottom -- */
+.entry-bottom               { width: 285px; height: auto; margin: 20px 0 10px 10px;}
+
+/*-----------------------------------------------------------------------------
+----------------------------- 7 - Contact Form --------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Contact Form -- */
+#contactform #contactName, #contactform #emaill, #contactform #subject { width:94%; }	
+#contactform #subject         { width: 97%;}
+#contactform textarea         { width: 97%; } 
+
+/*-----------------------------------------------------------------------------
+----------------------------- 8 - Custom Pages --------------------------------
+-----------------------------------------------------------------------------*/
+/* -- Tag & Category Index -- */
+#mcTagMap .holdleft, #sc_mcTagMap .holdleft { width: 280px !important; }
+
+
+/*-----------------------------------------------------------------------------
+----------------------------- 10 - Footer -------------------------------------
+-----------------------------------------------------------------------------*/
+.wrap-footer                  { width: 305px;}
+.social-section               { height: auto;}
+/* -- widgets -- */
+footer .widget                { display: none;}
+footer .one_fourth, footer .one_fourth_last { display: none;}
+/* -- Copyright -- */
+.copyright                    { width: 305px; margin-top: -30px; }
+/* -- Footer Social Icons -- */
+ul.footer-social li           { margin: 15px 5px 0 5px; }
+ul.footer-social li a         { text-align: center; padding: 5px 4px; } 
+
+/* -- Columns -- */
+.one_half, .one_half_last         { float:left;width:100%; margin-bottom:10px; margin-right:0; }
+.one_half_last                    { margin-right:0;}
+
+.one_third, .one_third_last       { float:left; width:100%; margin-bottom:10px; margin-right:0; }
+.one_third_last                   { margin-right:0;}
+
+.one_fourth, .one_fourth_last     { float:left; width:100%; margin-bottom:10px; margin-right:0; }
+.one_fourth_last                  { margin-right:0;}
+}
