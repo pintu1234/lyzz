@@ -8,77 +8,42 @@
 ?> 
 
 <!-- Begin Footer -->
-<footer> 
-
-	<div class="social-section">
-	    <!-- footer social icons. -->
-	    <?php if (!empty($smof_data['bottom_icons'])) { ?>
-	        <?php echo stripslashes($smof_data['bottom_icons']); ?>
-	    <?php } ?>
-	</div>
-
-	<div class="wrap-footer">
-      <!-- Begin random articles on slide -->
-      <div class="featured-articles">
-
-        <div class="featured-title">
-            <h3><?php _e('Random Articles', 'anthemes'); ?></h3>
-            <div class="slide-nav">
-              <span id="slider-prev2"></span>
-              <span id="slider-next2"></span>
-            </div><!-- end .slide-nav -->          
-        </div><!-- end .featured-title --> 
-               
-        <ul class="random-articles-slider">
-        <?php $footertop = new WP_Query(array('orderby' => 'rand', 'posts_per_page' => 12 )); // number to display more / less ?>
-        <?php while ($footertop->have_posts()) : $footertop->the_post(); ?> 
-
-            <li <?php post_class('post-slide') ?> id="post-<?php the_ID(); ?>">
-                    <div class="article-category"><i></i> <?php $category = get_the_category(); if ($category) 
-                        { echo '<a href="' . get_category_link( $category[0]->term_id ) . '" class="tiptipBlog" title="' . sprintf( __( "View all posts in %s", "anthemes" ), $category[0]->name ) . '" ' . '>' . $category[0]->name.'</a> ';}  ?>
-                    </div><!-- end .article-category -->                
-                <?php if ( has_post_thumbnail()) { ?>
-                    <?php the_post_thumbnail('thumbnail-blog-featured', array('title' => "")); ?>
-                <?php } else { ?> 
-                    <a href="<?php the_permalink(); ?>"><img src="<?php echo get_template_directory_uri(); ?>/images/no-img.png" alt="article image" /></a> 
-                <?php } // Post Thumbnail ?> 
-
-
-                <div class="title-box">
-                    <span><?php the_author_posts_link(); ?></span>
-                    <?php if(function_exists('taqyeem_get_score')) { ?> <?php taqyeem_get_score(); ?> <?php } ?>                    
-                    <div class="clear"></div>
-                    <h2><a href="<?php the_permalink(); ?>"><?php if ( strlen(get_the_title()) > 60 ) { echo mb_substr(get_the_title(), 0, 56)." ..."; } else { the_title(''); } ?></a></h2>
+<footer class="full-width">
+    <div class="full-width links-map">
+        <div class="container">
+            <div>
+                <img src="http://127.0.0.1:8000/images/Logo-white.png" width="80" />
+                <p class="full-width">Unadulterated, Unpretentious, Unbothered, Unapologetic, Whatever Comes to mind, Uncensored, all me. It's Whatever, Lyzz</p>
+            </div>
+            <div>
+                <h2 class="full-width title2"><span>QUICK LINKS</span></h2>
+                <ul>
+                    <li><a href="http://127.0.0.1:8000">Home</a></li>
+                    <li><a href="http://127.0.0.1:8000/blogs">Blog</a></li>
+                    <li><a href="http://127.0.0.1:8000/contact-us">Contact</a></li>
+                </ul>
+            </div>
+            <div>
+                <h2 class="full-width title2"><span>CONTACT INFO</span></h2>
+                <div class="full-width address">
+                    <p><strong>Phone:</strong><br>In Your Hands or Back Pocket I Suppose</p>
+                    <p><strong>Address:</strong><br /> Somewhere in My Mind</p>
+                    <p><strong>Email :</strong><br /><a href="mailto:Lyzz@WhateverLyzz.com">Lyzz@WhateverLyzz.com</a></p>
                 </div>
-
-            </li><!-- end .post-slide --> 
-          <?php endwhile; wp_reset_query(); ?> 
-        </ul><!-- end .random-articles-slider -->        
-      </div> <div class="clear"></div> <!-- end .featured-articles -->
-
-
-
-        <div class="one_fourth">
-            <?php if ( ! dynamic_sidebar( 'footer1' ) ) : endif; ?><!-- #1st footer -->
-        </div>
-        <div class="one_fourth">
-            <?php if ( ! dynamic_sidebar( 'footer2' ) ) : endif; ?><!-- #2nd footer -->
-        </div>
-        <div class="one_fourth">
-            <?php if ( ! dynamic_sidebar( 'footer3' ) ) : endif; ?><!-- #3rd footer -->
-        </div>
-        <div class="one_fourth_last">
-            <?php if ( ! dynamic_sidebar( 'footer4' ) ) : endif; ?><!-- #4th footer -->
-        </div><div class="clear"></div>        
- 
-
-        <div class="copyright">
-          <?php if (!empty($smof_data['copyright_footer'])) { ?>
-              <?php echo stripslashes($smof_data['copyright_footer']); ?>
-          <?php } ?>  
+            </div>
+            <div class="flex_p">
+                <img src="http://127.0.0.1:8000/images/img.png" class="full-width" style="max-width: 275px;margin-bottom: 5px;" />
+                <p style="font-size:12px;padding:0!important;">(we don't own the rights to this image)</p>
+            </div>
         </div>
     </div>
-	<p id="back-top" style="display: block;"><a href="#top"><span></span></a></p>
+    <div class="copyright">© Copyright 2020 Whatever Lyzz.</div>
+    <div class="social-icons w_100">
+        <a href=""><i class="icon-facebook" target="_blank"></i></a>
+        <a href="https://www.linkedin.com/company/whateverlyzz" target="_blank"><i class="icon-linkedin"></i></a>
+        <a href="https://twitter.com/WhateverLyzz" target="_blank"><i class="icon-twitter"></i></a>
+        <a href="https://www.instagram.com/whateverlyzz/" target="_blank"><i class="icon-instagram"></i></a>
+    </div>
 </footer><!-- end #footer -->
 
 <!-- Menu & link arrows -->
