@@ -26,10 +26,10 @@ define( 'DB_NAME', 'lblog' );
 define( 'DB_USER', 'root' );
 
 /** MySQL database password */
-define( 'DB_PASSWORD', '' );
+define( 'DB_PASSWORD', 'doral@123' );
 
 /** MySQL hostname */
-define( 'DB_HOST', '127.0.0.1' );
+define( 'DB_HOST', 'https://lyzz.doralhealthconnect.com' );
 
 /** Database Charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8mb4' );
